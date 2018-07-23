@@ -87,4 +87,7 @@ body {
 .AudioVideoMiniPlayer-posterContainer-3fvrf{
 	display: none;    
 }
+element.style{
+    transform: translateY(-90px);
+}
 }
