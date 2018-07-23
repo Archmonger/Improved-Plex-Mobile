@@ -9,9 +9,6 @@
 .DashboardPage-dashboardPageContent-2rN8X {
     padding: 0 20px 20px;
 }
-.FullPage-container-17Y0c {
-    font-size: 11px;
-}
 .SidebarList-sidebarListHeader-1t0yz {
     font-size: 10px;
 }
@@ -46,5 +43,51 @@
 }
 .SidebarMenuButton-sidebarMenuPrimaryTitleContainer-3-vDD {
     white-space: nowrap;
+}
+
+    
+    
+    
+    
+.MetadataPosterCard-card-3bztR{
+	width: 70px !important;
+	height: 100px !important;
+}
+body{
+	line-height: 1;
+	font-size: 12px
+}
+.Page-page-aq7i_{
+	font-size: 11px;
+}
+.nav-header>li>a{
+	font-size: 13px;
+	line-height: 1px;
+}
+.SidebarMenuButton-sidebarMenuSecondaryTitle-2jpJL{
+	font-size: 10px;
+}
+.nav-bar{
+	font-size: 20px
+}
+.dropdown-poster-toggle .media-poster{
+	width: 25px;
+	height: 25px;
+}
+.FullPage-container-17Y0c{
+	font-size: 10px;
+}
+.ServerSidebar-sidebarContent-3hRNR{
+	padding-top: 0px;
+	padding-left: 5px;
+}
+.PageContent-innerPageContent-3ktLT{
+	padding: 20px;
+}
+.PlayerIconButton-playerButton-1DmNp{
+	font-size: 12px;
+}
+.AudioVideoMiniPlayer-posterContainer-3fvrf{
+	display: none;    
 }
 }
