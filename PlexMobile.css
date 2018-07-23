@@ -1,4 +1,5 @@
 /*Special thanks to Leram84 for helping create this.*/
+/*Consider .FullPage-container-17Y0c ----> div[class*="FullPage-container"] if class names change on update.*/
 .nav-bar>ul>li>a.plex-pass-btn{
     display:none;
     visibility: hidden;
