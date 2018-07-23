@@ -1,9 +1,9 @@
 # Improved-Plex-Mobile-CSS
 TLDR: PLEX Web CSS changes for mobile devices. 
 
-Requirements: Nginx (with http_sub_module, otherwise known as subfilter)
+**Requirements:** Nginx (with http_sub_module, otherwise known as subfilter)
 
-Installation:
+**Installation:**
 Edit your Nginx config to add in the CSS. One method is to download the CSS to your root directory and href it.
 ```
 sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="https://mydomain.com/css/PlexMobile.css"> </head>';
