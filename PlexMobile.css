@@ -43,13 +43,10 @@
 }
 .SidebarMenuButton-sidebarMenuPrimaryTitleContainer-3-vDD {
     white-space: nowrap;
+}   
+.MetadataPosterCell-titleContainer-24DI6{
+	font-size: 10px;
 }
-
-    
-    
-    
-    
-
 body {
 	line-height: 1;
 	font-size: 12px
@@ -80,12 +77,7 @@ body {
 }
 .PageContent-innerPageContent-3ktLT{
 	padding: 20px;
-}
-	
-	
-	
-	
-	
+}	
 .AudioVideoPlayerControls-durationContainer-3TK0D{
 	text-align: left;
 	padding-left: 10px;
@@ -99,5 +91,5 @@ body {
 }
 .DurationRemaining-container-1F4w8{	
 	font-size: 11px;
-}    
+} 
 }
