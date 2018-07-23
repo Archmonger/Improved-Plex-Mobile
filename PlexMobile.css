@@ -1,6 +1,6 @@
 //Special thanks to Leram84 for helping create this.
 .plex-pass-btn {
-    display: none !important;
+    display: none;
 }
 
 @media only screen and (max-width: 768px) {
