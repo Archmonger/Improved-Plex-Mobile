@@ -1,0 +1,47 @@
+//Special thanks to Leram84 for helping create this.
+@media only screen and (max-width: 768px) {
+.DashboardPage-dashboardPageContent-2rN8X {
+    padding: 0 20px 20px;
+}
+.nav-bar-nav>li>a .plex-pass-label {
+    display: none;
+}
+.FullPage-container-17Y0c {
+    font-size: 11px;
+}
+.SidebarList-sidebarListHeader-1t0yz {
+    font-size: 10px;
+}
+.SidebarMenuButton-sidebarMenuButton-khx_P {
+    font-size: 10px;
+}
+.SidebarContainer-sidebarContainer-2RAYT {
+    width: 140px;
+    flex: 0 140px;
+    -webkit-flex: 0 0 140px;
+}
+.LibraryPageJumpBar-jumpBar-22VKU {
+    display: none;
+}
+.MetadataListPageContent-metadataListScroller-1uFgY.MetadataListPageContent-hasGutter-1EfyE {
+    right: 0;
+}
+.PageHeader-pageHeader-18RSw {
+    font-size: 10px;
+}
+.HubCellHeader-hubCellHeader-2pvYN {
+    padding: 10px 0 5px 5px;
+}
+.SidebarLink-sidebarLink-L2OPd {
+    padding-left: 10px;
+}
+.SidebarList-sidebarListHeader-1t0yz {
+    padding-left: 5px;
+}
+.SidebarMenuButton-sidebarMenuButton-khx_P {
+    padding-left: 10px;
+}
+.SidebarMenuButton-sidebarMenuPrimaryTitleContainer-3-vDD {
+    white-space: nowrap;
+}
+}
