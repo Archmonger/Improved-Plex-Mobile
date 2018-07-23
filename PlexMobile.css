@@ -43,10 +43,7 @@
 }
 .SidebarMenuButton-sidebarMenuPrimaryTitleContainer-3-vDD {
     white-space: nowrap;
-}   
-.MetadataPosterCell-titleContainer-24DI6{
-	font-size: 10px;
-}
+} 
 body {
 	line-height: 1;
 	font-size: 12px
@@ -92,4 +89,10 @@ body {
 .DurationRemaining-container-1F4w8{	
 	font-size: 11px;
 } 
+.MetadataPosterCell-continueWatchingTitleContainer-3yCAY{
+	font-size: 10px;
+}  
+.MetadataPosterCell-titleContainer-24DI6{
+	font-size: 10px;
+}
 }
