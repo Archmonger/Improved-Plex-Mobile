@@ -1,5 +1,5 @@
 # Improved-Plex-Mobile-CSS
-TLDR: PLEX Web CSS changes for mobile devices. 
+PLEX Web CSS changes for mobile devices. 
 
 **Requirements:** Nginx (with http_sub_module, otherwise known as subfilter)
 
