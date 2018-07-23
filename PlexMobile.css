@@ -82,12 +82,21 @@ body {
 	padding: 20px;
 }
 .PlayerIconButton-playerButton-1DmNp{
-	font-size: 12px;
+	font-size: 20px;
 }
 .AudioVideoMiniPlayer-posterContainer-3fvrf{
 	display: none;    
 }
 element.style{
     transform: translateY(-90px);
+}
+.AudioVideoPlayerControls-durationContainer-3TK0D{
+	text-align: left;
+}
+.AudioVideoPlayerControls-buttonGroupCenter-Vok98{
+	transform: translateX(-50px);
+}
+.AudioVideoPlayerControls-buttonGroupRight-17650{
+	transform: translateX(-50px);
 }
 }
