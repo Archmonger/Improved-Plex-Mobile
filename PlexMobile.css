@@ -81,4 +81,23 @@ body {
 .PageContent-innerPageContent-3ktLT{
 	padding: 20px;
 }
+	
+	
+	
+	
+	
+.AudioVideoPlayerControls-durationContainer-3TK0D{
+	text-align: left;
+	padding-left: 10px;
+	transform: translateY(28px);
+}
+.AudioVideoPlayerControls-buttonGroupCenter-Vok98{
+	transform: translate(-110px, -7px) scale(1);
+}
+.AudioVideoPlayerControls-buttonGroupRight-17650{
+	transform: translateX(-120px) scale(0.6);
+}
+.DurationRemaining-container-1F4w8{	
+	font-size: 11px;
+}    
 }
