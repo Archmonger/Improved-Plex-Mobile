@@ -1,6 +1,6 @@
 //Special thanks to Leram84 for helping create this.
 .plex-pass-label {
-    display: none;
+    display: none !important;
 }
 
 @media only screen and (max-width: 768px) {
