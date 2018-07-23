@@ -1,6 +1,9 @@
 /*Special thanks to Leram84 for helping create this.*/
 .nav-bar>ul>li>a.plex-pass-btn{
-    display:none !important;
+    display:none;
+}
+.HubCell-hubCell-3Ys17{
+    display:none;
 }
 @media only screen and (max-width: 768px) {
 .DashboardPage-dashboardPageContent-2rN8X {
