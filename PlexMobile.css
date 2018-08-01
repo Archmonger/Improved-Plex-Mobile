@@ -44,9 +44,6 @@ button[class*="plexPassButton"]{
 .PageHeader-pageHeader-18RSw {
     font-size: 10px;
 }
-.HubCellHeader-hubCellHeader-2pvYN {
-    padding: 10px 0 5px 5px;
-}
 .SidebarLink-sidebarLink-L2OPd {
     padding-left: 10px;
     padding-bottom: 0px;
@@ -137,7 +134,7 @@ body {
 	font-size: 11px;
 }
 .HubCellHeader-hubCellHeader-2pvYN{
-	padding: 10px 0 0px 5px;
+	padding: 0px 0 0px 5px;
 }
 .PrePlayMetadataContent-content-2ww3j{
 	padding-left: 0px;
