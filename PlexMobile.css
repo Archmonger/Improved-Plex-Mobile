@@ -16,6 +16,9 @@ button[class*="plexPassButton"]{
     visibility: hidden;
     opacity:0;
 }
+.nav-bar{
+	background-color: rgba(0,0,0,.4);
+}
 @media only screen and (max-width: 768px) {
 /*Homepage, sidenav, and misc*/
 .DashboardPage-dashboardPageContent-2rN8X {
