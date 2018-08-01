@@ -175,4 +175,15 @@ div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="MetadataPosterC
 	min-width: 0% !important;
 	float: right !important;
 }
+	
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayDetailsGroupItem-label-"]{
+	flex: 0 0 58px !important;
+	-webkit-flex: 0 0 58px !important;
+}
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayDetailsGroupItem-content-"]{
+	font-size: 12px !important;
+}
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayTertiaryTitle-tertiaryTitle-"]{
+	font-size: 12px !important;
+}
 }
