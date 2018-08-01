@@ -186,7 +186,7 @@ div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayDetailsG
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayTertiaryTitle-tertiaryTitle-"]{
 	font-size: 12px !important;
 }
-div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRatingRightTitle-starRating-"]{
+div[class*="PrePlayPageContent-prePlayPageContent-"] span[class*="PrePlayRatingRightTitle-starRating-"]{
 	display: none;
 }
 }
