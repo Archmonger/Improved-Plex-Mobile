@@ -139,28 +139,5 @@ body {
 	
 	
 	
-/*Individual Media Items*/
-div[class*="PageContent-innerPageContent-"] div{
-	position: initial;
-}
-div[class*="PrePlayMetadataContent-content-"]{
-	padding-left: 0px;
-	padding-top: 20px;
-}
-div[class*="MetadataPosterCard-card-"]{
-	margin: auto;
-}
-div[class*="PrePlayMetadataContent-content-"]{
-	line-height: 1.25;
-}
-div[class*="PrePlayMetadataInnerContent-innerContent-"]{
-	padding: 0;
-}
-div[class*="PrePlaySecondaryTitle-secondaryTitle-"]{
-	display: inline;
-}
-div[class*="PrePlayRatingRightTitle-ratingRightTitle-"]{
-	display: inline-block;
-	margin-left: 0px;
-}	
+/*Individual Media Items*/	
 }
