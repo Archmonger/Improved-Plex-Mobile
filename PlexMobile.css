@@ -142,6 +142,9 @@ body {
 div[class*="SidebarLink-title-"] {
     font-size: 11px;
 }
+.SidebarServerLibraries-librariesTitle-3iqmv{
+	overflow: visible !important;
+}
 	
 	
 /*Individual Media Items*/
