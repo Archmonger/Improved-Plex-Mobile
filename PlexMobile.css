@@ -31,9 +31,9 @@ button[class*="plexPassButton"]{
     font-size: 10px;
 }
 .SidebarContainer-sidebarContainer-2RAYT {
-    width: 140px;
-    flex: 0 140px;
-    -webkit-flex: 0 0 140px;
+    width: 100px;
+    flex: 0 100px;
+    -webkit-flex: 0 0 100px;
 }
 .LibraryPageJumpBar-jumpBar-22VKU {
     display: none;
