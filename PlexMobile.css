@@ -100,4 +100,37 @@ body {
 .MetadataPosterCell-titleContainer-24DI6{
 	font-size: 10px;
 }
+.nav-dropdown .dropdown-poster-toggle{
+	display: none;
+}
+.nav-bar-nav>li>a{
+	line-height: 40px;
+}
+.PageHeader-pageHeader-18RSw{
+	height: 40px;
+}
+.SidebarMenuButton-sidebarMenuButton-khx_P{
+	height: 40px;
+}
+.Slider-slider-2oLVT{
+	width: 40px;
+}
+.DisclosureArrow-disclosureArrow-1KPaB.DisclosureArrow-medium-20Idw.DisclosureArrow-up-L-Dw3 {
+	display: none;
+}
+.DisclosureArrowButton-disclosureArrowButton-11LSb.DisclosureArrowButton-medium-3zt1W{
+	padding-right: 0px;
+}
+.PageHeaderBreadcrumbButton-button-1uaPj{
+	margin-right: 0px;
+}
+.MetadataPosterTitle-singleLineTitle-24_DN{
+	height: 14px;
+}
+.HubCellHeader-hubCellHeader-2pvYN{
+	padding: 10px 0 0px 5px;
+}
+PrePlayMetadataContent-content-2ww3j{
+	padding-left: 0px;
+}
 }
