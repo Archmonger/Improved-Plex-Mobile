@@ -207,7 +207,7 @@ div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayLeftTitl
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRightTitle-rightTitle-"]{
 	white-space: normal !important;
 }
-div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayStatusButton-statusButton-"]{
+div[class*="PrePlayPageContent-prePlayPageContent-"] a[class*="PrePlayStatusButton-statusButton-"]{
 	margin-top: 3px !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlaySummary-summary-"]{
