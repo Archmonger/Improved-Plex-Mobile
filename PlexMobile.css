@@ -151,6 +151,7 @@ div[class*="SidebarLink-title-"] {
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PageContent-innerPageContent-"] > div > div:not([class*="PrePlay"]) {
     position: relative !important;
     top: 0px !important;
+    padding-top: 10px;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayMetadataContent-content-"]{
 	padding-left: 0px !important;
