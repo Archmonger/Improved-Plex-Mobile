@@ -196,18 +196,18 @@ div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayTertiary
 	font-size: 12px !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] span[class*="PrePlayRatingRightTitle-starRating-"]{
-	display: none;
+	display: none !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRatingRightTitle-criticRating-"]{
-	margin-left: 0px;
+	margin-left: 0px !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayLeftTitle-leftTitle-"]{
-	white-space: normal;
+	white-space: normal !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRightTitle-rightTitle-"]{
-	white-space: normal;
+	white-space: normal !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayStatusButton-statusButton-"]{
-	margin-top: 3px;
+	margin-top: 3px !important;
 }
 }
