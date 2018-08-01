@@ -165,14 +165,14 @@ div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRatingRi
 }
 	
 div[class*="PrePlayPageContent-prePlayPageContent-"]  div[class*="MetadataPosterCardOverlay-overlay-"]{
-	transform: translateY(-225px);
+	transform: translateY(-225px) !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="MetadataPosterCardOverlay-background-"]{
-	display: none;
+	display: none !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="MetadataPosterCardOverlay-unplayedBadge-"]{
-	text-align: right;
-	min-width: 0%;
-	float: right;
+	text-align: right !important;
+	min-width: 0% !important;
+	float: right !important;
 }
 }
