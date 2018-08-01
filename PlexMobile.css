@@ -5,6 +5,9 @@
     visibility: hidden;
     opacity:0;
 }
+.nav-dropdown .dropdown-poster-toggle{
+	display: none;
+}
 /*Homepage, sidenav, and Body*/
 button[class*="plexPassButton"]{    
     display:none;
@@ -102,9 +105,6 @@ body {
 }  
 .MetadataPosterCell-titleContainer-24DI6{
 	font-size: 10px;
-}
-.nav-dropdown .dropdown-poster-toggle{
-	display: none;
 }
 .nav-bar-nav>li>a{
 	line-height: 40px;
