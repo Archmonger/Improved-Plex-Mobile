@@ -148,9 +148,9 @@ div[class*="SidebarLink-title-"] {
 	
 	
 /*Individual Media Items*/
-div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PageContent-innerPageContent-"] > div > div:nth-of-type(2) {
-	position: relative !important;
-	top: -20px !important;
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PageContent-innerPageContent-"] > div > div:not([class*="PrePlay"]) {
+    position: relative !important;
+    top: -20px !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayMetadataContent-content-"]{
 	padding-left: 0px !important;
