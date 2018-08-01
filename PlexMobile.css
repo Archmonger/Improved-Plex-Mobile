@@ -210,4 +210,16 @@ div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRightTit
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayStatusButton-statusButton-"]{
 	margin-top: 3px !important;
 }
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlaySummary-summary-"]{
+     font-size: 12px !important;
+}
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlaySecondaryTitle-secondaryTitle-"]{
+     font-size: 12px !important;
+}
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayTertiaryTitle-tertiaryTitle-"]{
+    margin-top: -25px !important;
+}
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRatingRightTitle-criticRating-"]{
+	display: none !important;
+}
 }
