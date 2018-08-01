@@ -141,7 +141,7 @@ body {
 	
 	
 /*Individual Media Items*/
-	div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PageContent-innerPageContent-"] div{
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PageContent-innerPageContent-"] div{
 	position: initial !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayMetadataContent-content-"]{
