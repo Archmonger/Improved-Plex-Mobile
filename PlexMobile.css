@@ -136,8 +136,10 @@ body {
 }
 .PrePlayMetadataContent-content-2ww3j{
 	padding-left: 0px;
-}
-	
+}	
+div[class*="SidebarLink-title-"] {
+    font-size: 12px;
+}	
 	
 	
 /*Individual Media Items*/
@@ -189,5 +191,17 @@ div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayTertiary
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] span[class*="PrePlayRatingRightTitle-starRating-"]{
 	display: none;
+}
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRatingRightTitle-criticRating-"]{
+	margin-left: 0px;
+}
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayLeftTitle-leftTitle-"]{
+	white-space: normal;
+}
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRightTitle-rightTitle-"]{
+	white-space: normal;
+}
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayStatusButton-statusButton-"]{
+	margin-top: 3px;
 }
 }
