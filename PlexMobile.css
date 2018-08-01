@@ -148,8 +148,9 @@ div[class*="SidebarLink-title-"] {
 	
 	
 /*Individual Media Items*/
-div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PageContent-innerPageContent-"] div{
-	position: initial !important;
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PageContent-innerPageContent-"] > div > div:nth-of-type(2) {
+	position: relative !important;
+	top: -20px !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayMetadataContent-content-"]{
 	padding-left: 0px !important;
@@ -170,10 +171,6 @@ div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlaySecondar
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRatingRightTitle-ratingRightTitle-"]{
 	display: inline-block !important;
 	margin-left: 0px !important;
-}
-	
-div[class*="PrePlayPageContent-prePlayPageContent-"]  div[class*="MetadataPosterCardOverlay-overlay-"]{
-	transform: translateY(-225px) !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="MetadataPosterCardOverlay-background-"]{
 	display: none !important;
