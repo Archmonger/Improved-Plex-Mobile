@@ -8,7 +8,7 @@
 .nav-dropdown .dropdown-poster-toggle{
 	display: none;
 }
-/*Homepage, sidenav, and Body*/
+/*Homepage, sidenav, and misc*/
 button[class*="plexPassButton"]{    
     display:none;
     visibility: hidden;
