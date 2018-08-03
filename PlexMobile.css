@@ -231,4 +231,7 @@ button[class*="MenuItem-menuItem-"] {
 div[class^="HubCellTitle-hubCellTitle-"], div[class*="HubCellTitle-hubCellTitle-"] a {
 	font-size: 12px !important;
 }
+div[class^="HubCell-hubActions-"] {
+     font-size: 15px;
+}
 }
