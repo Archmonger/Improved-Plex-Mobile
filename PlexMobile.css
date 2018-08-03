@@ -228,7 +228,7 @@ div[class^="PageHeaderLeft-pageHeaderLeft-"] {
 button[class*="MenuItem-menuItem-"] {
     padding: 15px 20px;
 }
-div[class^="HubCellTitle-hubCellTitle-"] {
+div[class^="HubCellTitle-hubCellTitle-"], div[class*="HubCellTitle-hubCellTitle-"] a {
 	font-size: 12px !important;
 }
 }
