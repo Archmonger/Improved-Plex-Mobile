@@ -219,7 +219,7 @@ div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayTertiary
 div[class*="PrePlayPageContent-prePlayPageContent-"] span[class*="PrePlayRatingRightTitle-criticRating-"]{
 	display: none !important;
 }
-span[class^="MetadataPosterTitle-isSplitLine-"] {
+span[class*="MetadataPosterTitle-isSplitLine-"] {
     display: none !important;
 }
 div[class^="PageHeaderLeft-pageHeaderLeft-"] {
