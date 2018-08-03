@@ -225,4 +225,7 @@ span[class^="MetadataPosterTitle-isSplitLine-"] {
 div[class^="PageHeaderLeft-pageHeaderLeft-"] {
     display: none !important;
 }
+button[class*="MenuItem-menuItem-"] {
+    padding: 15px 20px;
+}
 }
