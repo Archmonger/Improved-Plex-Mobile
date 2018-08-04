@@ -208,7 +208,7 @@ div[class*="PrePlayPageContent-prePlayPageContent-"] div[class^="PrePlayTertiary
 	display: none;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] a[class*="PrePlayStatusButton-statusButton-"]{
-	margin-top: 3px !important;
+	display: none;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlaySummary-summary-"]{
      font-size: 12px !important;
