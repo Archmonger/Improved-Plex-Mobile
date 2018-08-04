@@ -204,8 +204,8 @@ div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRatingRi
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayLeftTitle-leftTitle-"]{
 	white-space: normal !important;
 }
-div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRightTitle-rightTitle-"]{
-	white-space: normal !important;
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class^="PrePlayTertiaryTitle-tertiaryTitle-"] div[class^="PrePlayRightTitle-rightTitle-"] {
+	display: none;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] a[class*="PrePlayStatusButton-statusButton-"]{
 	margin-top: 3px !important;
