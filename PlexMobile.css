@@ -246,4 +246,7 @@ div[class^="PrePlayArtwork-imageContainer-"]{
 div[class^="PageHeaderRight-pageHeaderRight-"] div[class^="PrePlayPageHeader-divider-"] {
 	display: none !important;
 }
+div[class*="PrePlayPageContent-prePlayPageContent-"] div[class^="PrePlaySecondaryTitle-secondaryTitle-"] div[class^="PrePlayLeftTitle-leftTitle-"] {
+    color: hsla(0,0%,100%,.45);
+}
 }
