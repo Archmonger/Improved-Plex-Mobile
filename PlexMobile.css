@@ -249,4 +249,7 @@ div[class^="PageHeaderRight-pageHeaderRight-"] div[class^="PrePlayPageHeader-div
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class^="PrePlaySecondaryTitle-secondaryTitle-"] div[class^="PrePlayLeftTitle-leftTitle-"] {
     color: hsla(0,0%,100%,.45);
 }
+.PrePlayDetailsGroup-group-3i0Tj {
+    display: none;
+}
 }
