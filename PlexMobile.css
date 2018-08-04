@@ -132,6 +132,7 @@ body {
 .MetadataPosterTitle-singleLineTitle-24_DN{
 	height: 14px;
 	font-size: 11px;
+	max-width: 100%;
 }
 .HubCellHeader-hubCellHeader-2pvYN{
 	padding: 0px 0 0px 5px;
@@ -145,7 +146,9 @@ div[class*="SidebarLink-title-"] {
 .SidebarServerLibraries-librariesTitle-3iqmv{
 	overflow: visible !important;
 }
-	
+div[class^="SidebarLibrariesActions-actions-"] {
+    display: none;
+}	
 	
 /*Individual Media Items*/
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PageContent-innerPageContent-"] > div > div:not([class*="PrePlay"]) {
