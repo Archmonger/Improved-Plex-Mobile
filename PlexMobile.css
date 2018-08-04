@@ -145,9 +145,6 @@ div[class*="SidebarLink-title-"] {
 .SidebarServerLibraries-librariesTitle-3iqmv{
 	overflow: visible !important;
 }
-div[class^="SidebarLibrariesActions-actions-"] {
-    display: none;
-}
 	
 	
 /*Individual Media Items*/
@@ -205,7 +202,7 @@ div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayLeftTitl
 	white-space: normal !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRightTitle-rightTitle-"]{
-	display: none !important;
+	white-space: normal !important;
 }
 div[class*="PrePlayPageContent-prePlayPageContent-"] a[class*="PrePlayStatusButton-statusButton-"]{
 	margin-top: 3px !important;
@@ -235,15 +232,15 @@ div[class^="HubCellTitle-hubCellTitle-"], div[class*="HubCellTitle-hubCellTitle-
 	font-size: 12px !important;
 }
 div[class^="HubCell-hubActions-"] {
-	display: none !important;
+	font-size: 15px;
 }
 button[data-qa-id="toolbarToggleArtwork"] {
-	display: none !important;
+	display: none;
 }
 div[class^="PrePlayArtwork-imageContainer-"]{
-	display: none !important;
+	display: none;
 }
 div[class^="PageHeaderRight-pageHeaderRight-"] div[class^="PrePlayPageHeader-divider-"] {
-	display: none !important;
+	display: none;
 }
 }
