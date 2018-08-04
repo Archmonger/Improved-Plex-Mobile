@@ -235,15 +235,15 @@ div[class^="HubCellTitle-hubCellTitle-"], div[class*="HubCellTitle-hubCellTitle-
 	font-size: 12px !important;
 }
 div[class^="HubCell-hubActions-"] {
-	font-size: 15px;
+	display: none !important;
 }
 button[data-qa-id="toolbarToggleArtwork"] {
-	display: none;
+	display: none !important;
 }
 div[class^="PrePlayArtwork-imageContainer-"]{
-	display: none;
+	display: none !important;
 }
 div[class^="PageHeaderRight-pageHeaderRight-"] div[class^="PrePlayPageHeader-divider-"] {
-	display: none;
+	display: none !important;
 }
 }
