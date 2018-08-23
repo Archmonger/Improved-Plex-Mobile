@@ -29,6 +29,10 @@ button[class*="plexPassButton"]{
 }
 .SidebarMenuButton-sidebarMenuButton-khx_P {
     font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    background-color: rgba(0,0,0,.15);
 }
 .SidebarContainer-sidebarContainer-2RAYT {
     width: 130px;
@@ -48,9 +52,6 @@ button[class*="plexPassButton"]{
     padding-left: 10px;
     padding-bottom: 0px;
     padding-top: 0px;
-}
-.SidebarMenuButton-sidebarMenuButton-khx_P {
-    padding-left: 10px;
 }
 .SidebarMenuButton-sidebarMenuPrimaryTitleContainer-3-vDD {
     white-space: nowrap;
@@ -112,10 +113,6 @@ body {
 }
 .PageHeader-pageHeader-18RSw{
 	height: 40px;
-}
-.SidebarMenuButton-sidebarMenuButton-khx_P{
-	height: 40px;	
-	padding-right: 10px;
 }
 .Slider-slider-2oLVT{
 	width: 40px;
