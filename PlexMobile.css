@@ -18,6 +18,9 @@ button[class*="plexPassButton"]{
 .nav-bar{
 	background-color: rgba(0,0,0,.4);
 }
+.SidebarMenuButton-sidebarMenuButton-khx_P {
+    background-color: rgba(0,0,0,.15) !important;
+}
 @media only screen and (max-width: 768px) {
 /*Homepage, sidenav, and misc*/
 .DashboardPage-dashboardPageContent-2rN8X {
@@ -32,7 +35,6 @@ button[class*="plexPassButton"]{
     padding-left: 10px;
     padding-right: 10px;
     height: 40px;
-    background-color: rgba(0,0,0,.15) !important;
 }
 .SidebarContainer-sidebarContainer-2RAYT {
     width: 130px;
