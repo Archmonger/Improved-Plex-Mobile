@@ -32,7 +32,7 @@ button[class*="plexPassButton"]{
     padding-left: 10px;
     padding-right: 10px;
     height: 40px;
-    background-color: rgba(0,0,0,.15);
+    background-color: rgba(0,0,0,.15) !important;
 }
 .SidebarContainer-sidebarContainer-2RAYT {
     width: 130px;
