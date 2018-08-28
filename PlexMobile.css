@@ -16,7 +16,7 @@ button[class*="plexPassButton"]{
     opacity:0;
 }
 .nav-bar{
-	background-color: rgba(0,0,0,.4);
+	background-color: rgba(0,0,0,.6);
 }
 .SidebarMenuButton-sidebarMenuButton-khx_P {
     background-color: rgba(0,0,0,.15) !important;
