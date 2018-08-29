@@ -1,6 +1,6 @@
 /*Special thanks to Leram84*/
 .nav-bar>ul>li>a.plex-pass-btn{
-    display:none;
+    display:none !important;
     visibility: hidden;
     opacity:0;
 }
