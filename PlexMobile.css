@@ -23,6 +23,9 @@ button[class*="plexPassButton"]{
 }
 @media only screen and (max-width: 768px) {
 /*Homepage, sidenav, and misc*/
+.nav-bar{
+	background-color: rgba(0,0,0,.55);
+}
 .DashboardPage-dashboardPageContent-2rN8X {
     padding: 0 20px 20px;
 }
