@@ -4,22 +4,13 @@
     visibility: hidden;
     opacity:0;
 }
-.nav-dropdown .dropdown-poster-toggle{
-	display: none;
-}
-div[data-qa-id*="hub--home.newscast"] {
-    display: none;
-}
 button[class*="plexPassButton"]{    
     display:none;
     visibility: hidden;
     opacity:0;
 }
-.nav-bar{
-	background-color: rgba(0,0,0,.6) !important;
-}
-.SidebarMenuButton-sidebarMenuButton-khx_P {
-    background-color: rgba(0,0,0,.15) !important;
+.nav-dropdown .dropdown-poster-toggle {
+    height: 40px !important;
 }
 @media only screen and (max-width: 768px) {
 /*Homepage, sidenav, and misc*/
