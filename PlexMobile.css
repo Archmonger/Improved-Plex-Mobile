@@ -13,6 +13,7 @@ button[class*="plexPassButton"]{
 /*Homepage, sidenav, and misc*/
 .nav-dropdown .dropdown-poster-toggle {
     height: 40px !important;
+    padding-left: 10px !important;
 }
 .nav-bar{
 	background-color: rgba(0,0,0,.55);
