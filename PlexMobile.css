@@ -9,10 +9,10 @@ button[class*="plexPassButton"]{
     visibility: hidden;
     opacity:0;
 }
+@media only screen and (max-width: 768px) {
 .nav-dropdown .dropdown-poster-toggle {
     height: 40px !important;
 }
-@media only screen and (max-width: 768px) {
 /*Homepage, sidenav, and misc*/
 .nav-bar{
 	background-color: rgba(0,0,0,.55);
