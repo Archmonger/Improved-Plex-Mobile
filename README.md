@@ -1,5 +1,5 @@
 # Improved Plex Mobile CSS
-PLEX Web CSS changes for mobile devices. Intended for use in conjunction with OrganizrV2.
+PLEX Web CSS changes for mobile devices to create a functional mobile WebUI and video player for Android.
 Last tested with PLEX v1.13.4.5271.
 
 **Requirements:** Nginx (with http_sub_module, otherwise known as subfilter)
