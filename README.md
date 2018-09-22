@@ -10,5 +10,7 @@ Edit your Nginx config to add in the CSS. One method is to download the CSS to y
 sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="https://mydomain.com/css/PlexMobile.css"> </head>';
 sub_filter_once on;
 ```
+
+**Screenshots:**
 ![Plex Mobile CSS](https://github.com/Archmonger/Blackberry-OG-Themes/blob/master/Screenshots/bbog_plex_2.PNG?raw=true "Plex Mobile CSS")
 ![Plex Mobile CSS 2](https://github.com/Archmonger/Blackberry-OG-Themes/blob/master/Screenshots/bbog_plex_3.PNG?raw=true "Plex Mobile CSS 2")
