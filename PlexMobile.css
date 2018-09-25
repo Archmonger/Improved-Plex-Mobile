@@ -16,7 +16,10 @@ button[class*="plexPassButton"]{
     padding-left: 10px !important;
 }
 .nav-bar{
-	background-color: rgba(0,0,0,.55);
+	background-color: rgba(0,0,0,0.0);
+}
+.NavBar-container-1T0BJ{
+	height:40px !important;
 }
 .DashboardPage-dashboardPageContent-2rN8X {
     padding: 0 20px 20px;
