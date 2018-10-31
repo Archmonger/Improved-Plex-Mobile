@@ -1,4 +1,3 @@
-/*Special thanks to Leram84 for sharing knowledge*/
 .nav-bar>ul>li>a.plex-pass-btn{
     display:none !important;
     visibility: hidden;
@@ -9,8 +8,12 @@ button[class*="plexPassButton"]{
     visibility: hidden;
     opacity:0;
 }
+
 @media only screen and (max-width: 768px) {
 /*Homepage, sidenav, and misc*/
+button[data-qa-id="sidebarLibraryMoreButton"]{
+	display: none;
+}
 .NavBarActivityButton-label-2ZN0g{
 	top: 20px !important;
 }
