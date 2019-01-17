@@ -13,6 +13,5 @@ sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="https://mydom
 sub_filter_once on;
 ```
 
-**Screenshots**<br/>
-![Plex Mobile CSS](https://github.com/Archmonger/Blackberry-OG-Themes/blob/master/Screenshots/bbog_plex_2.PNG?raw=true "Plex Mobile CSS")
-![Plex Mobile CSS 2](https://github.com/Archmonger/Blackberry-OG-Themes/blob/master/Screenshots/bbog_plex_3.PNG?raw=true "Plex Mobile CSS 2")
+**Screenshots [In Organizr](https://github.com/Archmonger/Blackberry-Flat)**<br/>
+![Plex Mobile CSS](https://github.com/Archmonger/Blackberry-Flat/blob/master/Screenshots/bbf_plex_in_organizr_mobile.jpg?raw=truee "Plex Mobile CSS")
