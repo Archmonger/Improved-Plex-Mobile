@@ -13,5 +13,5 @@ sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="https://mydom
 sub_filter_once on;
 ```
 
-**Screenshots [In Organizr](https://github.com/Archmonger/Blackberry-Flat)**<br/>
+**Screenshots of [Blackberry Flat Plex](https://github.com/Archmonger/Blackberry-Flat) [In Organizr](https://github.com/causefx/Organizr)**<br/>
 ![Plex Mobile CSS](https://github.com/Archmonger/Blackberry-Flat/blob/master/Screenshots/bbf_plex_in_organizr_mobile.jpg?raw=truee "Plex Mobile CSS")
