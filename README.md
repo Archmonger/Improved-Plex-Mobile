@@ -6,10 +6,10 @@ Last tested with PLEX v1.13.4.5271.
 Nginx (with http_sub_module, otherwise known as subfilter)
 
 **Installation**<br/>
-You can edit your Nginx configuration to inject CSS. One method is to download the CSS to your root directory or css subfolder and href it. This can be accomplished with sub_filter (http_sub_module). 
+You can edit your Nginx configuration to inject CSS. This can be accomplished with sub_filter (http_sub_module). 
 ```
 proxy_set_header Accept-Encoding "";
-sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="https://mydomain.com/css/PlexMobile.css"> </head>';
+sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="https://archmonger.github.io/Improved-Plex-Mobile-CSS/plex_mobile.css"> </head>';
 sub_filter_once on;
 ```
 
