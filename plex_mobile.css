@@ -40,6 +40,27 @@ div[class*="QuickSearchInput-container"]{
 div[class*="QuickSearchInput-container"]:focus-within{
     background-color: #FFF;
 }
+div[class*="QuickSearchProvider-title"], a[class*="QuickSearchPlaceholderLink-placeholder"] {
+	width: auto;
+}
+div[class*="QuickSearch-container"] div[class*="QuickSearchResults-container"]{
+	display: none;
+}
+div[class*="QuickSearch-container"]:focus-within div[class*="QuickSearchResults-container"]{
+	display: block;
+}
+div[class*="QuickSearch-container"] input[data-qa-id="quickSearchInput"]{
+	color: rgba(0,0,0,0);
+}
+div[class*="QuickSearch-container"]:focus-within input[data-qa-id="quickSearchInput"]{
+	color: #555;
+}
+div[class*="QuickSearch-container"] button{
+	display: none;
+}
+div[class*="QuickSearch-container"]:focus-within  button{
+	display: block;
+}
 /*Homepage, sidenav, and misc*/
 .server-settings-container label{
   padding-left: 20px;
