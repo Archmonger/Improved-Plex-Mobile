@@ -1,5 +1,5 @@
 # Improved Plex Mobile CSS
-PLEX Web CSS changes for mobile devices to create a functional mobile WebUI and video player for Android. For those looking for better OrganizrV2 integration, please see [Blackberry Flat](https://github.com/Archmonger/Blackberry-Flat). This CSS file is essentially Blackberry Flat Plex without any theme changes. View the Blackberry Flat repository to see the last tested version.
+PLEX Web CSS changes for mobile devices to create a functional mobile WebUI and video player for Android. This CSS file is essentially Blackberry Flat Plex minus any theme changes, only keeping the bits that relate to creating a functional mobile site. For those looking for OrganizrV2 integration, please see [Blackberry Flat](https://github.com/Archmonger/Blackberry-Themes). 
 
 **Requirements**<br/> 
 Nginx (with http_sub_module, otherwise known as subfilter)
