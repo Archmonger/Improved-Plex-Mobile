@@ -17,12 +17,11 @@ div[class*="NavBar-buttonSeparator-"] {
     display: none;
   }
   div[class*="QuickSearch-container"] {
-    display: block;
-    width: 40px;
-    transform: translateX(-10px);
+    display: inline-block;
+    width: 100%;
+    margin-left: 0px;
     transition-timing-function: ease;
     transition-duration: 0.25s;
-    margin-top: 2.5px;
   }
   i[class*="QuickSearchInput-searchIcon"] {
     margin-left: 9px;
