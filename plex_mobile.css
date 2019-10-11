@@ -13,6 +13,9 @@ div[class*="NavBar-buttonSeparator-"] {
 }
 @media only screen and (max-width: 768px) {
   /* Navbar Searchbar */
+  a[class*="NavBar-plexLogo-"] {
+    display: none;
+  }
   div[class*="QuickSearch-container"] {
     display: block;
     width: 40px;
@@ -59,9 +62,21 @@ div[class*="NavBar-buttonSeparator-"] {
   div[class*="QuickSearch-container"]:focus-within button {
     display: block;
   }
-  /*Homepage, sidenav, and misc*/
+  /* Homepage, sidenav, and misc */
+  button[class*="SourceSidebarItem-overflowButton-"] {
+    opacity: 1;
+  }
+  div[class*="ServerDashboardPageSection-section-"] {
+    padding-left: 0px;
+  }
+  .devices-container .card-poster.device-icon {
+    display: none;
+  }
+  div[class*="SettingsSidebar-"] a[class*="SidebarLink-sidebarLink-"] {
+    padding-left: 0px;
+  }
   .server-settings-container label {
-    padding-left: 20px;
+    padding-left: 0px;
     display: block;
   }
   .card-sortable {
@@ -117,11 +132,6 @@ div[class*="NavBar-buttonSeparator-"] {
     height: 40px !important;
     padding-left: 5px;
   }
-  [class*="SidebarLink-sidebarLink-"] {
-    padding-left: 10px;
-    padding-bottom: 8px;
-    padding-top: 8px;
-  }
   [class*="SidebarMenuButton-sidebarMenuPrimaryTitleContainer-"] {
     white-space: nowrap;
   }
@@ -163,9 +173,6 @@ div[class*="NavBar-buttonSeparator-"] {
   [class*="MetadataPosterCell-continueWatchingTitleContainer-"] {
     font-size: 10px;
   }
-  [class*="MetadataPosterCell-titleContainer-"] {
-    font-size: 10px;
-  }
   .nav-bar-nav>li>a {
     line-height: 40px;
   }
@@ -182,7 +189,7 @@ div[class*="NavBar-buttonSeparator-"] {
     margin-right: 0px;
   }
   [class*="MetadataPosterTitle-singleLineTitle-"] {
-    height: 14px;
+    height: 18px;
     font-size: 11px;
     max-width: 100%;
   }
@@ -191,9 +198,6 @@ div[class*="NavBar-buttonSeparator-"] {
   }
   [class*="PrePlayMetadataContent-content-"] {
     padding-left: 0px;
-  }
-  div[class*="SidebarLink-title-"] {
-    font-size: 11px;
   }
   [class*="SidebarServerLibraries-librariesTitle-"] {
     overflow: visible !important;
@@ -205,7 +209,36 @@ div[class*="NavBar-buttonSeparator-"] {
     display: none;
   }
   div[class*="ManageLibrariesPane-header"] {
+    text-align: center;
+    display: block;
+  }
+  div[class*="ManageLibrariesPane-headerTitle"] {
+    padding-bottom: 15px;
+    padding-bottom: 10px;
+  }
+  button[class*="ManageLibrariesPane-button-"] {
+    margin-bottom: 15px;
+  }
+  .remote-access-status-icon.glyphicon.globe {
+    display: none;
+  }
+  .remote-access-status-message {
     padding-left: 0px;
+  }
+  .plex-image.server.server-xs.server-logo {
+    display: none;
+  }
+  .remote-access-error-container {
+    margin-left: 0px;
+  }
+  .server-settings-container select, .web-settings-container select {
+    margin: 0px;
+    font-size: 13px;
+    max-width: 100%;
+  }
+  .remote-access-mapping-container .remote-access-mapping .mapping-label {
+    display: block;
+    margin-top: 15px;
   }
   div[class*="ServerAvatar-avatar"] {
     display: none;
@@ -227,7 +260,26 @@ div[class*="NavBar-buttonSeparator-"] {
   div[class*="HubCell-hubCell-"]:first-of-type {
     margin-top: 0px;
   }
-  /* #######  Individual Media Items  ####### */
+  div[class*="UsersSettingsRowFriend-actions-"] {
+    opacity: 1;
+    flex: 0 1 50px;
+  }
+  div[class*="UsersSettingsRowAvatar-container-"] {
+    display: none;
+  }
+  div[class*="UsersSettingsRow-row-3"] {
+    padding: 10px;
+  }
+  div[class*="UsersSettingsRowHomeUser-row-"] div[class*="UsersSettingsRowShares-container-"] {
+    display: none;
+  }
+  div[class*="UsersSettingsRowHomeUser-row-"] div[class*="UsersSettingsRowHome-container-"] {
+    flex: 0 1 20px;
+  }
+  div[class*="SettingsPage-content-"] {
+    padding: 0 10px;
+  }
+  /* Individual Media Items  */
   div[class*="Menu-menuScroller"] {
     max-height: 350px !important;
   }
