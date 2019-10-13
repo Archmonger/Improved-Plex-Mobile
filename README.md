@@ -1,5 +1,7 @@
 # Improved Plex Mobile CSS
-PLEX Web CSS changes for mobile devices to create a functional mobile web interface and video player. This CSS file is essentially Blackberry Flat Plex minus any theme changes, only keeping the bits that relate to creating a functional mobile site. For those looking for OrganizrV2 integration, please see [Blackberry Themes](https://github.com/Archmonger/Blackberry-Themes).
+PLEX Web CSS changes for mobile devices to create a functional mobile page.
+
+For those looking for Organizr V2 integration, please see [Blackberry Themes](https://github.com/Archmonger/Blackberry-Themes).
 
 **Requirements**<br/>
 Have Plex running behind an Nginx reverse proxy (with http_sub_module, otherwise known as sub_filter)
