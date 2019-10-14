@@ -281,6 +281,9 @@ div[class*="NavBar-buttonSeparator-"] {
     padding: 0 10px;
   }
   /* Individual Media Items  */
+  div[class*="DisclosureArrowButton-disclosureArrow-"] {
+    position: relative;
+  }
   div[class*="Menu-menuScroller"] {
     max-height: 350px !important;
   }
