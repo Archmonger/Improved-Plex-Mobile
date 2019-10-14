@@ -64,6 +64,9 @@ div[class*="NavBar-buttonSeparator-"] {
     display: none;
   }
   /* Homepage, sidenav, and misc */
+  .remote-access-error-container .form-inline .btn {
+    margin-left: 0px;
+  }
   div[class*="MetadataListStylesMenu-slider-"] {
     display: none;
   }
