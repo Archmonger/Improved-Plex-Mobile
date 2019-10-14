@@ -64,6 +64,9 @@ div[class*="NavBar-buttonSeparator-"] {
     display: none;
   }
   /* Homepage, sidenav, and misc */
+  div[class*="MetadataListStylesMenu-slider-"] {
+    display: none;
+  }
   button[aria-label="Remove from Home"] {
     display: none;
   }
