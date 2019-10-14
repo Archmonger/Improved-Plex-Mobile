@@ -64,6 +64,9 @@ div[class*="NavBar-buttonSeparator-"] {
     display: none;
   }
   /* Homepage, sidenav, and misc */
+  button[aria-label="Remove from Home"] {
+    display: none;
+  }
   button[class*="SourceSidebarItem-overflowButton-"] {
     opacity: 1;
   }
