@@ -64,6 +64,12 @@ div[class*="NavBar-buttonSeparator-"] {
     display: none;
   }
   /* Homepage, sidenav, and misc */
+  div[class*="ServerTroubleshootingPane-buttonContainer-"] {
+    display: block;
+  }
+  div[class*="ServerTroubleshootingPane-buttonContainer-"] a:first-child {
+    margin-bottom: 10px;
+  }
   .remote-access-error-container .form-inline .btn {
     margin-left: 0px;
   }
