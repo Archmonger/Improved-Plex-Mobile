@@ -49,10 +49,11 @@ div[class*="NavBar-buttonSeparator-"] {
     display: block;
   }
   div[class*="QuickSearch-container"] input[data-qa-id="quickSearchInput"] {
-    color: rgba(0, 0, 0, 0);
+    display: none;
   }
-  div[class*="QuickSearch-container"]:focus-within input[data-qa-id="quickSearchInput"] {
+  div[class*="QuickSearch-container"]:focus-within input[data-qa-id="quickSearchInput"], div[class*="QuickSearch-container"]:active input[data-qa-id="quickSearchInput"] {
     color: #555;
+    display: block;
   }
   div[class*="QuickSearch-container"] button {
     display: none;
