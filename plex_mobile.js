@@ -19,6 +19,12 @@ function elementReady(selector) {
 	});
 }
 
+function addJQuery() {
+	var script = document.createElement('script');
+	script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+	document.getElementsByTagName('head')[0].appendChild(script);
+}
+
 elementReady("head").then(
 	(elementsAreLoaded) => {
 		/* Set viewport scale to 1 */
@@ -26,11 +32,6 @@ elementReady("head").then(
 		meta.name = "viewport";
 		meta.content = "width=device-width, initial-scale=1";
 		document.getElementsByTagName('head')[0].appendChild(meta);
-
-		/* Add jQuery */
-		var script = document.createElement('script');
-		script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
-		document.getElementsByTagName('head')[0].appendChild(script);
 
 		/* Prevent play btn from double clicking */
 		document.getElementById('plex').addEventListener('touchstart', (e) => {
@@ -45,12 +46,15 @@ elementReady("head").then(
 			}
 		});
 
-		/* Fix for navbar overflow */
-		$('div[class*="QuickSearch-container-"]').focusin(function() {
-			$('div[class*="NavBar-right-"]').css("display", "none");
-		});
+		/* Add jQuery */
+		addJQuery(function() {
+			/* Fix for navbar overflow */
+			$('div[class*="QuickSearch-container-"]').focusin(function() {
+				$('div[class*="NavBar-right-"]').css("display", "none");
+			});
 
-		$('div[class*="QuickSearch-container-"]').focusout(function() {
-			$('div[class*="NavBar-right-"]').css("display", "block");
+			$('div[class*="QuickSearch-container-"]').focusout(function() {
+				$('div[class*="NavBar-right-"]').css("display", "block");
+			});
 		});
 	});
