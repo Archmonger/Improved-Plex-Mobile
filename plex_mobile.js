@@ -20,9 +20,12 @@ function elementReady(selector) {
 }
 
 function addJQuery() {
-	var script = document.createElement('script');
-	script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
-	document.getElementsByTagName('head')[0].appendChild(script);
+	return new Promise((resolve, reject) => {
+		var script = document.createElement('script');
+		script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+		document.getElementsByTagName('head')[0].appendChild(script);
+		resolve();
+	});
 }
 
 elementReady("head").then(
@@ -47,14 +50,15 @@ elementReady("head").then(
 		});
 
 		/* Add jQuery */
-		addJQuery(function() {
-			/* Fix for navbar overflow */
-			$('div[class*="QuickSearch-container-"]').focusin(function() {
-				$('div[class*="NavBar-right-"]').css("display", "none");
-			});
+		addJQuery().then(
+			(jQueryAdded) => {
+				/* Fix for navbar overflow */
+				$('div[class*="QuickSearch-container-"]').focusin(function() {
+					$('div[class*="NavBar-right-"]').css("display", "none");
+				});
 
-			$('div[class*="QuickSearch-container-"]').focusout(function() {
-				$('div[class*="NavBar-right-"]').css("display", "block");
+				$('div[class*="QuickSearch-container-"]').focusout(function() {
+					$('div[class*="NavBar-right-"]').css("display", "block");
+				});
 			});
-		});
 	});
