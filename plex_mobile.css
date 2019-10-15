@@ -414,4 +414,35 @@ div[class*="NavBar-buttonSeparator-"] {
   div[class*="DiscoverPage-discoverPageList"] {
     padding: 0;
   }
+  /* Video Player */
+  div[class*="PlayerControls-hasLandscapePoster-"] div[class*="PlayerControls-buttonGroupCenter-"] {
+    margin-left: 15px !important;
+  }
+  div[class*="PlayerControls-hasLandscapePoster-"] div[class*="PlayerControls-buttonGroupRight-"] {
+    display: none;
+  }
+  div[class*="Player-miniPlayerContainer-"] div[class*="PlayerControls-volumeSlider-"] {
+    display: none;
+  }
+  div[class*="PlayerControls-buttonGroupRight-"] {
+    justify-content: flex-start;
+  }
+  div[class*="PlayerControls-buttonGroupRight-"] button[data-qa-id="playQueueButton"] {
+    display: none;
+  }
+  div[class*="PlayerControls-buttonGroupRight-"] button[data-qa-id="shuffleButton"] {
+    display: none;
+  }
+  div[class*="PlayerControls-buttonGroupRight-"] button[data-qa-id="repeatButton"] {
+    display: none;
+  }
+  div[class*="PlayerControls-buttonGroupRight-"] button[data-qa-id="moreButton"] {
+    display: none;
+  }
+  div[class*="PlayerControls-buttonGroupRight-"] button[data-qa-id="volumeButton"] {
+    display: none;
+  }
+  div[class*="ControlsContainer-controlsContainer-"] {
+    min-width: 0px;
+  }
 }
