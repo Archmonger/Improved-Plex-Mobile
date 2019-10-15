@@ -19,49 +19,50 @@ div[class*="NavBar-buttonSeparator-"] {
   a[class*="NavBar-plexLogo-"] {
     display: none;
   }
-  div[class*="QuickSearch-container"] {
-    display: inline-block;
+  div[class*="QuickSearch-container-"] {
+    display: block;
     width: 100%;
-    margin-left: 0px;
-    transition-timing-function: ease;
-    transition-duration: 0.25s;
   }
-  i[class*="QuickSearchInput-searchIcon"] {
+  i[class*="QuickSearchInput-searchIcon-"] {
     margin-left: 9px;
     color: hsla(0, 0%, 100%, .7);
   }
-  div[class*="QuickSearch-container"]:focus-within {
-    display: block;
-    width: calc(100vw - 60px);
-    margin-right: 20px;
-  }
-  div[class*="QuickSearchInput-container"] {
-    height: 35px;
+  div[class*="QuickSearchInput-container-"] {
     background: rgba(0, 0, 0, 0);
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    transition: ease width 0.3s;
   }
-  div[class*="QuickSearchInput-container"]:focus-within {
+  div[class*="QuickSearch-container-"] div[class*="QuickSearchResults-container-"] {
+    display: none;
+    padding-right: 10px;
+  }
+  div[class*="QuickSearch-container-"]:focus-within div[class*="QuickSearchResults-container-"] {
+    display: block;
+  }
+  div[class*="QuickSearchInput-container-"]:focus-within {
     background: #FFF;
+    width: calc(100vw - 70px);
+    margin-right: 10px;
   }
-  div[class*="QuickSearchProvider-title"], a[class*="QuickSearchPlaceholderLink-placeholder"] {
+  div[class*="QuickSearchInput-container-"] input[data-qa-id="quickSearchInput"] {
+    width: 0;
+  }
+  div[class*="QuickSearchProvider-title"], a[class*="QuickSearchPlaceholderLink-placeholder-"] {
     width: auto;
   }
-  div[class*="QuickSearch-container"] div[class*="QuickSearchResults-container"] {
-    display: none;
-  }
-  div[class*="QuickSearch-container"]:focus-within div[class*="QuickSearchResults-container"] {
+  div[class*="QuickSearch-container-"]:focus-within div[class*="QuickSearchResults-container-"] {
     display: block;
   }
-  div[class*="QuickSearch-container"] input[data-qa-id="quickSearchInput"] {
-    display: none;
-  }
-  div[class*="QuickSearch-container"]:focus-within input[data-qa-id="quickSearchInput"], div[class*="QuickSearch-container"]:active input[data-qa-id="quickSearchInput"] {
+  div[class*="QuickSearch-container-"]:focus-within input[data-qa-id="quickSearchInput"], div[class*="QuickSearch-container-"]:active input[data-qa-id="quickSearchInput"] {
     color: #555;
     display: block;
   }
-  div[class*="QuickSearch-container"] button {
+  div[class*="QuickSearch-container-"] button {
     display: none;
   }
-  div[class*="QuickSearch-container"]:focus-within button {
+  div[class*="QuickSearch-container-"]:focus-within button {
     display: block;
   }
   button[aria-label="Back"] {
@@ -123,6 +124,7 @@ div[class*="NavBar-buttonSeparator-"] {
   }
   [class*="NavBar-container-"] {
     height: 40px !important;
+    overflow: hidden;
   }
   [class*="DashboardPage-dashboardPageContent-"] {
     padding: 0 20px 20px;
@@ -204,6 +206,9 @@ div[class*="NavBar-buttonSeparator-"] {
   }
   [class*="DisclosureArrowButton-disclosureArrowButton-"][class*="DisclosureArrowButton-medium-"] {
     padding-right: 0px;
+  }
+  button[class*="NavBar-accountButton-"] div[class*="DisclosureArrow-disclosureArrow-"] {
+    display: none;
   }
   [class*="PageHeaderBreadcrumbButton-button-"] {
     margin-right: 0px;
@@ -465,6 +470,9 @@ div[class*="NavBar-buttonSeparator-"] {
   }
   div[class*="SeekBar-seekBar-"] div[class*="SeekBar-seekBarTrack-"] div[class*="SeekBar-seekBarFill-"] {
     height: 8px;
+  }
+  div[class*="SeekBar-seekBar-"] div[class*="Slider-thumbTrack-"] {
+    z-index: 99;
   }
   div[class*="SeekBar-seekBar-"] button[class*="Slider-thumb-"] {
     height: 18px;
