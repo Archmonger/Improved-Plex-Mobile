@@ -1,5 +1,5 @@
 # Improved Plex Mobile CSS
-PLEX Web CSS changes for mobile devices to create a functional mobile page. For those looking for Organizr V2 integration, please see [Blackberry Themes](https://github.com/Archmonger/Blackberry-Themes).
+Plex web changes to create a functional site  for mobile devices. For those looking for Organizr V2 integration, please see [Blackberry Themes](https://github.com/Archmonger/Blackberry-Themes).
 
 If anything doesn't look quite right, report it via [Github Issues](https://github.com/Archmonger/Improved-Plex-Mobile-CSS/issues).
 
