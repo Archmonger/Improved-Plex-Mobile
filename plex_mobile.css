@@ -1,3 +1,6 @@
+#plex {
+  min-width: 300px;
+}
 .nav-bar>ul>li>a.plex-pass-btn {
   display: none !important;
   visibility: hidden;
@@ -412,12 +415,25 @@ div[class*="NavBar-buttonSeparator-"] {
   div[class*="PageHeaderDivider-pageHeaderDivider"] {
     display: none;
   }
-  div[class*="DiscoverPage-discoverPageList"] {
+  div[class*="DiscoverPage-discoverPageL#ist"] {
     padding: 0;
   }
   /* Video Player */
   div[class*="PlayerControls-hasLandscapePoster-"] div[class*="PlayerControls-buttonGroupCenter-"] {
-    margin-left: 15px !important;
+    margin: 0px 15px;
+  }
+  div[class*="PlayerControls-buttonGroupCenter-"] {
+    flex-grow: 1;
+    margin-left: 0;
+    margin-right: 42px;
+    padding: 0px 20px;
+    justify-content: center;
+  }
+  div[class*="PlayerControls-buttonGroupCenter-"] button[data-qa-id="skipBackButton"] {
+    display: none;
+  }
+  div[class*="PlayerControls-buttonGroupCenter-"] button[data-qa-id="skipForwardButton"] {
+    display: none;
   }
   div[class*="PlayerControls-hasLandscapePoster-"] div[class*="PlayerControls-buttonGroupRight-"] {
     display: none;
@@ -426,24 +442,35 @@ div[class*="NavBar-buttonSeparator-"] {
     display: none;
   }
   div[class*="PlayerControls-buttonGroupRight-"] {
-    justify-content: flex-start;
-  }
-  div[class*="PlayerControls-buttonGroupRight-"] button[data-qa-id="playQueueButton"] {
-    display: none;
-  }
-  div[class*="PlayerControls-buttonGroupRight-"] button[data-qa-id="shuffleButton"] {
-    display: none;
-  }
-  div[class*="PlayerControls-buttonGroupRight-"] button[data-qa-id="repeatButton"] {
-    display: none;
-  }
-  div[class*="PlayerControls-buttonGroupRight-"] button[data-qa-id="moreButton"] {
-    display: none;
+    justify-content: center;
+    padding: 0px 20px;
+    margin-right: 48px;
   }
   div[class*="PlayerControls-buttonGroupRight-"] button[data-qa-id="volumeButton"] {
-    display: none;
+    position: absolute;
+    right: 20px;
+    bottom: 28px;
   }
   div[class*="ControlsContainer-controlsContainer-"] {
     min-width: 0px;
+  }
+  div[class*="SeekBar-seekBar-"] {
+    height: 28px;
+  }
+  div[class*="SeekBar-seekBar-"] div[class*="SeekBar-seekBarTrack-"] {
+    height: 8px;
+  }
+  div[class*="SeekBar-seekBar-"] div[class*="SeekBar-seekBarTrack-"] div[class*="SeekBar-seekBarBuffer-"] {
+    height: 8px;
+  }
+  div[class*="SeekBar-seekBar-"] div[class*="SeekBar-seekBarTrack-"] div[class*="SeekBar-seekBarFill-"] {
+    height: 8px;
+  }
+  div[class*="SeekBar-seekBar-"] button[class*="Slider-thumb-"] {
+    height: 18px;
+    width: 18px;
+  }
+  div[class*="SeekBar-seekBar-"] div[class*="Slider-thumbTrack-"] {
+    z-index: 99;
   }
 }
