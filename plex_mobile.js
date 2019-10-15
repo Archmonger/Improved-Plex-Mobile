@@ -19,13 +19,18 @@ function elementReady(selector) {
 	});
 }
 
-elementReady("head").then( // Email button
+elementReady("head").then(
 	(elementsAreLoaded) => {
 		/* Set viewport scale to 1 */
 		var meta = document.createElement('meta');
 		meta.name = "viewport";
 		meta.content = "width=device-width, initial-scale=1";
 		document.getElementsByTagName('head')[0].appendChild(meta);
+
+		/* Add jQuery */
+		var script = document.createElement('script');
+		script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+		document.getElementsByTagName('head')[0].appendChild(script);
 
 		/* Prevent play btn from double clicking */
 		document.getElementById('plex').addEventListener('touchstart', (e) => {
@@ -38,5 +43,14 @@ elementReady("head").then( // Email button
 			) {
 				e.preventDefault();
 			}
+		});
+
+		/* Fix for navbar overflow */
+		$('div[class*="QuickSearch-container-"]').focusin(function() {
+			$('div[class*="NavBar-right-"]').css("display", "none");
+		});
+
+		$('div[class*="QuickSearch-container-"]').focusout(function() {
+			$('div[class*="NavBar-right-"]').css("display", "block");
 		});
 	});

@@ -23,8 +23,6 @@ div[class*="NavBar-buttonSeparator-"] {
     display: inline-block;
     width: 100%;
     margin-left: 0px;
-    transition-timing-function: ease;
-    transition-duration: 0.25s;
   }
   i[class*="QuickSearchInput-searchIcon"] {
     margin-left: 9px;
@@ -33,7 +31,6 @@ div[class*="NavBar-buttonSeparator-"] {
   div[class*="QuickSearch-container"]:focus-within {
     display: block;
     width: calc(100vw - 60px);
-    margin-right: 20px;
   }
   div[class*="QuickSearchInput-container"] {
     height: 35px;
