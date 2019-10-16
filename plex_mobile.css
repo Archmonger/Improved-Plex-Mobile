@@ -471,4 +471,8 @@ div[class*="NavBar-buttonSeparator-"] {
   div[class*="SeekBar-seekBar-"] div[class*="Slider-thumbTrack-"] {
     z-index: 99;
   }
+  /* Remove card overlay btns */
+  button[class*="MetadataPosterCardOverlay-button-"] {
+    display: none;
+  }
 }
