@@ -16,7 +16,7 @@ sub_filter_once on;
 ```
 
 ## Screenshots
-| Classic | Improved Mobile CSS |
+| Classic | Improved Plex Mobile |
 |:---:|:---:|
 | ![Classic](https://archmonger.github.io/Improved-Plex-Mobile/screenshots/classic_1.png)  | ![New](https://archmonger.github.io/Improved-Plex-Mobile/screenshots/new_1.png) |
 | ![Classic](https://archmonger.github.io/Improved-Plex-Mobile/screenshots/classic_2.png)  | ![New](https://archmonger.github.io/Improved-Plex-Mobile/screenshots/new_2.png) |
