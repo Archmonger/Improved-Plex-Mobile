@@ -63,13 +63,16 @@ elementReady("head").then(
 		/* Add jQuery */
 		loadScript('https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', function() {
 			/* Fix for navbar overflow */
-			$('div[class*="QuickSearch-container-"]').focusin(function() {
-				$('div[class*="NavBar-right-"]').css("display", "none");
-			});
+			elementReady('div[class*="QuickSearch-container-"]').then(
+				(elementsAreLoaded) => {
+					$('div[class*="QuickSearch-container-"]').focusin(function() {
+						$('div[class*="NavBar-right-"]').css("display", "none");
+					});
 
-			$('div[class*="QuickSearch-container-"]').focusout(function() {
-				$('div[class*="NavBar-right-"]').css("display", "block");
-			});
+					$('div[class*="QuickSearch-container-"]').focusout(function() {
+						$('div[class*="NavBar-right-"]').css("display", "block");
+					});
+				});
 		});
 
 	});
