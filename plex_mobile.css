@@ -23,6 +23,7 @@ div[class*="NavBar-buttonSeparator-"] {
     display: inline-block;
     width: 100%;
     margin-left: 0px;
+    height: auto;
   }
   i[class*="QuickSearchInput-searchIcon"] {
     margin-left: 9px;
