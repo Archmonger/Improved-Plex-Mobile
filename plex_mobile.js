@@ -19,13 +19,24 @@ function elementReady(selector) {
 	});
 }
 
-function addJQuery() {
-	return new Promise((resolve, reject) => {
-		var script = document.createElement('script');
-		script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
-		document.getElementsByTagName('head')[0].appendChild(script);
-		resolve();
-	});
+function loadScript(url, callback) {
+	var script = document.createElement("script")
+	script.type = "text/javascript";
+	if (script.readyState) { // only required for IE <9
+		script.onreadystatechange = function() {
+			if (script.readyState === "loaded" || script.readyState === "complete") {
+				script.onreadystatechange = null;
+				callback();
+			}
+		};
+	} else { //Others
+		script.onload = function() {
+			callback();
+		};
+	}
+
+	script.src = url;
+	document.getElementsByTagName("head")[0].appendChild(script);
 }
 
 elementReady("head").then(
@@ -50,15 +61,15 @@ elementReady("head").then(
 		});
 
 		/* Add jQuery */
-		addJQuery().then(
-			(jQueryAdded) => {
-				/* Fix for navbar overflow */
-				$('div[class*="QuickSearch-container-"]').focusin(function() {
-					$('div[class*="NavBar-right-"]').css("display", "none");
-				});
-
-				$('div[class*="QuickSearch-container-"]').focusout(function() {
-					$('div[class*="NavBar-right-"]').css("display", "block");
-				});
+		loadScript('https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', function() {
+			/* Fix for navbar overflow */
+			$('div[class*="QuickSearch-container-"]').focusin(function() {
+				$('div[class*="NavBar-right-"]').css("display", "none");
 			});
+
+			$('div[class*="QuickSearch-container-"]').focusout(function() {
+				$('div[class*="NavBar-right-"]').css("display", "block");
+			});
+		});
+
 	});
