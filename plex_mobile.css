@@ -297,6 +297,9 @@ div[class*="NavBar-buttonSeparator-"] {
   div[class*="SettingsPage-content-"] {
     padding: 0 10px;
   }
+  .agent-types-nav>li {
+    width: 100%;
+  }
   /* Individual Media Items  */
   div[class*="DisclosureArrowButton-disclosureArrow-"] {
     position: relative;
