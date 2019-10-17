@@ -48,15 +48,18 @@ elementReady("head").then(
 		document.getElementsByTagName('head')[0].appendChild(meta);
 
 		/* Prevent play btn from double clicking */
-		document.getElementById('plex').addEventListener('touchstart', (e) => {
+		document.getElementById('plex').addEventListener('touchstart', (touchEvent) => {
 			let resumeButton = document.querySelectorAll('button[data-qa-id="resumeButton"]')[0];
 			let pauseButton = document.querySelectorAll('button[data-qa-id="pauseButton"]')[0];
 
-			if (
-				resumeButton && resumeButton.contains(e.target) ||
-				pauseButton && pauseButton.contains(e.target)
-			) {
-				e.preventDefault();
+			if (resumeButton && resumeButton.contains(touchEvent.target)) {
+				touchEvent.preventDefault();
+				resumeButton.click();
+			}
+
+			if (pauseButton && pauseButton.contains(touchEvent.target)) {
+				touchEvent.preventDefault();
+				pauseButton.click();
 			}
 		});
 
