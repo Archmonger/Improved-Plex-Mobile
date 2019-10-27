@@ -1,7 +1,7 @@
 # Improved Plex Mobile
 Plex web changes to create a functional site  for mobile devices. For those looking for Organizr V2 integration, please see [Blackberry Themes](https://github.com/Archmonger/Blackberry-Themes).
 
-If anything doesn't look quite right, report it via [Github Issues](https://github.com/Archmonger/Improved-Plex-Mobile/issues).
+If anything doesn't work or look quite right, report it via [Github Issues](https://github.com/Archmonger/Improved-Plex-Mobile/issues).
 
 **Requirements**<br/>
 Have Plex running behind an Nginx reverse proxy (with http_sub_module, otherwise known as sub_filter)
