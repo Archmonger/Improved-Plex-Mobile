@@ -480,4 +480,6 @@ div[class*="NavBar-buttonSeparator-"] {
   }
 }
 /* Bugfix: File path too long */
-.media-info-file-list > li { word-break: break-all; }
+.media-info-file-list>li {
+  word-break: break-all;
+}
