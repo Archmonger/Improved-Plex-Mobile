@@ -15,6 +15,14 @@ sub_filter '</body>' '<script language="javascript" src="https://archmonger.gith
 sub_filter_once on;
 ```
 
+**Docker**<br/>
+Run nginx reverse proxy in docker container
+
+```
+$ sudo docker-compose up -d
+Starting improvedplexmobile_nginx_1
+```
+
 ## Screenshots
 | Classic | Improved Plex Mobile |
 |:---:|:---:|
