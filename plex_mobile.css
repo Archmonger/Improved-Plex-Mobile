@@ -109,9 +109,6 @@ div[class*="NavBar-buttonSeparator-"] {
   [class*="NavBarActivityButton-label-"] {
     top: 20px !important;
   }
-  button[class*="Button-button-"][class*="Link-link-"][class*="Button-primary-"][class*="Button-medium-"][class*="Link-link-"][class*="Link-default-"] {
-    display: none !important;
-  }
   .nav-dropdown .dropdown-poster-toggle {
     height: 40px !important;
     padding-left: 10px !important;
@@ -314,13 +311,15 @@ div[class*="NavBar-buttonSeparator-"] {
   }
   div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayMetadataContent-content-"] {
     padding-left: 0px !important;
+    margin-left: 0px !important;
     padding-top: 20px !important;
+    line-height: 1.25 !important;
+  }
+  div[class*="PrePlayDetailsContainer-container-"] {
+    flex-direction: column !important;
   }
   div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="MetadataPosterCard-card-"] {
     margin: auto !important;
-  }
-  div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayMetadataContent-content-"] {
-    line-height: 1.25 !important;
   }
   div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayMetadataInnerContent-innerContent-"] {
     padding: 0 !important;
