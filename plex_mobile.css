@@ -1,3 +1,4 @@
+/* Global CSS that hides Plex pass buttons from navbar */
 #plex {
   min-width: 300px;
 }
@@ -14,6 +15,7 @@ button[class*="plexPassButton"] {
 div[class*="NavBar-buttonSeparator-"] {
   display: none;
 }
+/* Mobile CSS */
 @media only screen and (max-width: 768px) {
   /* Navbar Searchbar */
   a[class*="NavBar-plexLogo-"] {
