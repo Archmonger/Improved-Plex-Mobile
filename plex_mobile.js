@@ -83,11 +83,15 @@ elementReady("head").then(
 
 				(elementsAreLoaded) => {
 					$('div[class*="QuickSearch-container-"]').focusin(function() {
-						$('div[class*="NavBar-right-"]').css("display", "none");
+						if (window.matchMedia("(max-width: 768px)").matches){
+						    $('div[class*="NavBar-right-"]').css("display", "none");
+						}
 					});
 
 					$('div[class*="QuickSearch-container-"]').focusout(function() {
-						$('div[class*="NavBar-right-"]').css("display", "block");
+						if (window.matchMedia("(max-width: 768px)").matches){
+						    $('div[class*="NavBar-right-"]').css("display", "block");
+						}
 					});
 				});
 
