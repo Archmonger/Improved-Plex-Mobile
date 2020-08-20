@@ -52,7 +52,7 @@ If you need installation help, join our Discord!
    - If using the sample Nginx configuration, your forwarding rules will look something like _80_ -> _80_ and _443_ -> _443_ (_internal_ -> _external_).
 7) **Done!**
 
-#### Example: The four lines you'll need to add to your Nginx server block
+#### Example: The three lines you'll need to add to your Nginx server block
 ```nginx
 proxy_set_header Accept-Encoding "";
 sub_filter '</head>' '<meta name="viewport" content="width=device-width, initial-scale=1"></meta> <link rel="stylesheet" type="text/css" href="https://archmonger.github.io/Improved-Plex-Mobile/plex_mobile.css"> </head>';
