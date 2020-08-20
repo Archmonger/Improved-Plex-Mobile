@@ -11,8 +11,9 @@ If you need installation help, join our Discord!
 
 
 ## Requirements<br/>
-- Plex Media Server
-- Nginx
+- Plex Media Server _(free)_
+- Nginx _(free)_
+- Web Domain _(free or paid)_
 
 
 
