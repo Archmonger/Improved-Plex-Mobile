@@ -1,5 +1,13 @@
 # Improved Plex Mobile
-Provides changes to Plex web to create a better mobile devices experience.
+Provides changes to Plex web to create a better mobile devices experience. 
+
+### Features
+- Easily edit your Plex server configuration from your mobile device
+   - Library, network, agent settings, and more!
+- Let Plex users watch through a web browser with no restrictions
+- Designed for use with [Organizr](https://github.com/causefx/Organizr).
+
+<br/>
 
 If anything doesn't work or look quite right, report it via [Github Issues](https://github.com/Archmonger/Improved-Plex-Mobile/issues).
 
