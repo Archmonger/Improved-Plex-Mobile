@@ -56,8 +56,7 @@ _DISCLAIMER: In order to maintain this project through Plex updates, our sample 
 #### Example: The four lines you'll need to add to your Nginx server block
 ```nginx
 proxy_set_header Accept-Encoding "";
-sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="https://archmonger.github.io/Improved-Plex-Mobile/plex_mobile.css"> </head>';
-sub_filter '</body>' '<script language="javascript" src="https://archmonger.github.io/Improved-Plex-Mobile/plex_mobile.js"></script> </body>';
+sub_filter '</head>' '<meta name="viewport" content="width=device-width, initial-scale=1"></meta> <link rel="stylesheet" type="text/css" href="https://archmonger.github.io/Improved-Plex-Mobile/plex_mobile.css"> </head>';
 sub_filter_once on;
 ```
 
@@ -83,8 +82,7 @@ server {
 
       # Add Improved Plex Mobile to all web requests
       proxy_set_header Accept-Encoding "";
-      sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="https://archmonger.github.io/Improved-Plex-Mobile/plex_mobile.css"> </head>';
-      sub_filter '</body>' '<script language="javascript" src="https://archmonger.github.io/Improved-Plex-Mobile/plex_mobile.js"></script> </body>';
+      sub_filter '</head>' '<meta name="viewport" content="width=device-width, initial-scale=1"></meta> <link rel="stylesheet" type="text/css" href="https://archmonger.github.io/Improved-Plex-Mobile/plex_mobile.css"> </head>';
       sub_filter_once on;
 
       # Reverse proxy your Plex server's internal IP address
