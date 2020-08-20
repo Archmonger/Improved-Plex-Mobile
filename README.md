@@ -39,7 +39,6 @@ If you need installation help, join our Discord!
 
 
 ## Installation<br/>
-_DISCLAIMER: In order to maintain this project through Plex updates, our sample connfiguration file injects CSS and Javascript directly from this repository. If you do not feel comfortable trusting this repository to not contain malicious changes, you have several options. For example, you can fork this repository, enable Github Pages, and change the subfilter links to your fork. Alternatively, you can selfhost our files on your webserver._
 1) **Install Plex Media Server** on your local server.
 2) **Install Nginx** on your local server.
 3) **Obtain a web domain** (ex. mydomain.com) from a web registrar. Can be obtained for free from [Freenom](https://www.freenom.com/en/index.html?lang=en).
