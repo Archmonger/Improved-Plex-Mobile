@@ -60,7 +60,7 @@ sub_filter_once on;
 server {
   listen 443 ssl http2;
   include ssl.conf;
-  server_name plex.myserver.com;
+  server_name myserver.com;
   
   location / {
     include websockets.conf;
