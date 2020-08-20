@@ -121,6 +121,9 @@ div[class*="NavBar-buttonSeparator-"] {
   [class*="NavBar-container-"] {
     height: 40px !important;
   }
+  [class*="NavBar-container-"]:focus-within div[class*="NavBar-right-"] {
+    display: none;
+  }
   [class*="DashboardPage-dashboardPageContent-"] {
     padding: 0 20px 20px;
   }
