@@ -61,24 +61,27 @@ server {
   listen 443 ssl http2;
   include ssl.conf;
   server_name myserver.com;
-  
+
   location / {
-    include websockets.conf;
-    include reverse_proxy.conf;
-    include plex_headers.conf;
-    
-    # Fixes a bug where you get permission issues when accessing the web dashboard
-    if ($http_x_plex_device_name = '') {
-      rewrite ^/$ https://$http_host/web/index.html;
-    }
-    
-    proxy_set_header Accept-Encoding "";
-    sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="https://archmonger.github.io/Improved-Plex-Mobile/plex_mobile.css"> </head>';
-    sub_filter '</body>' '<script language="javascript" src="https://archmonger.github.io/Improved-Plex-Mobile/plex_mobile.js"></script> </body>';
-    sub_filter_once on;
-    
-    proxy_pass https://192.168.86.20:32400/;
+      include websockets.conf;
+      include reverse_proxy.conf;
+      include plex_headers.conf;
+
+      # Fixes a bug where you get permission issues when accessing the web dashboard
+      if ($http_x_plex_device_name = '') {
+          rewrite ^/$ https://$http_host/web/index.html;
+      }
+
+      # Add Improved Plex Mobile to all web requests
+      proxy_set_header Accept-Encoding "";
+      sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="https://archmonger.github.io/Improved-Plex-Mobile/plex_mobile.css"> </head>';
+      sub_filter '</body>' '<script language="javascript" src="https://archmonger.github.io/Improved-Plex-Mobile/plex_mobile.js"></script> </body>';
+      sub_filter_once on;
+
+      # Reverse proxy your Plex server's internal IP address
+      #          <<<<<< EDIT THIS LINE >>>>>>
+      proxy_pass https://192.168.1.200:32400/;
   }
-  
+
 }
 ```
