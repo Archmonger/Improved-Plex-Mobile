@@ -34,6 +34,7 @@ div[class*="NavBar-buttonSeparator-"] {
   div[class*="QuickSearch-container"]:focus-within {
     display: block;
     width: calc(100vw - 60px);
+    margin-right: 100vw;
   }
   div[class*="QuickSearchInput-container"] {
     height: 35px;
