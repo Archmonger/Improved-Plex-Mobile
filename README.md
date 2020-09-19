@@ -42,15 +42,15 @@ If you need installation help, join our Discord!
 1) **Install Plex Media Server** on your local server.
 2) **Install Nginx** on your local server.
 3) **Obtain a web domain** (ex. mydomain.com) from a web registrar. Can be obtained for free from [Freenom](https://www.freenom.com/en/index.html?lang=en).
-4) **Edit your web registrar's DNS records** to point to your server's [public IP address](https://www.google.com/search?q=what+is+my+ip&sourceid=opera&ie=UTF-8&oe=UTF-8).
+4) **Edit your web registrar's DNS records** to point to your server's [public IP address](https://www.google.com/search?q=what+is+my+ip&ie=UTF-8&oe=UTF-8).
    - This is done through your web registrar's management portal (ex. [Manage Domain](https://my.freenom.com/clientarea.php?action=domains) on Freenom)
-   - Optionally, you can configure your web domain to use [Cloudflare](cloudflare.com). This will hide your IP from the public, provide encryption, and various other forms of protection for free.
+   - Optionally, you can [configure your web domain to use Cloudflare](https://dev.to/hieplpvip/get-a-free-domain-with-freenom-and-cloudflare-k1j). This will hide your IP from the public, provide encryption, and various other forms of protection for free.
 5) **Configure Nginx to reverse proxy Plex** to your web domain.
    - A sample configuration file is provided [in our wiki](https://github.com/Archmonger/Improved-Plex-Mobile/wiki/Nginx-Configuration).
    - This sample configuration requires encryption (SSL). You will either use Cloudflare (on step 4) and download SSL certificates from their website, or configure [certbot](https://certbot.eff.org/) to generate SSL certificates. 
 6) **Port forward Nginx** by editing your router's configuration.
    - If using the sample Nginx configuration, your forwarding rules will look something like _80_ -> _80_ and _443_ -> _443_ (_internal_ -> _external_).
-7) **Done!**
+7) **Done!** You can now access Plex by typing in your web domain into any browser.
 
 #### Example: The three lines you'll need to add to your Nginx server block
 ```nginx
