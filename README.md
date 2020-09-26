@@ -44,7 +44,7 @@ If you need installation help, join our Discord!
 3) **Obtain a web domain** (ex. mydomain.com) from a web registrar. Can be obtained for free from [Freenom](https://www.freenom.com/en/index.html?lang=en).
 4) **Edit your web registrar's DNS records** to point to your server's [public IP address](https://www.google.com/search?q=what+is+my+ip&ie=UTF-8&oe=UTF-8).
    - This is done through your web registrar's management portal (ex. [Manage Domain](https://my.freenom.com/clientarea.php?action=domains) on Freenom)
-   - Optionally, you can [configure your web domain to use Cloudflare](https://dev.to/hieplpvip/get-a-free-domain-with-freenom-and-cloudflare-k1j). This will hide your IP from the public, provide encryption, and various other forms of protection for free.
+   - **ALTERNATIVE:** You can [configure your web domain to use Cloudflare](https://dev.to/hieplpvip/get-a-free-domain-with-freenom-and-cloudflare-k1j). This will hide your IP from the public, provide encryption, DDoS prevention, and various other forms of protection/optimizations for free.
 5) **Configure Nginx to reverse proxy Plex** to your web domain.
    - A sample configuration file is provided [in our wiki](https://github.com/Archmonger/Improved-Plex-Mobile/wiki/Nginx-Configuration).
    - This sample configuration requires encryption (SSL). You will either use Cloudflare (on step 4) and download SSL certificates from their website, or configure [certbot](https://certbot.eff.org/) to generate SSL certificates. 
