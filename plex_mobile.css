@@ -470,15 +470,15 @@ div[class*="NavBar-buttonSeparator-"] {
         padding: 0;
     }
     /* Video Player */
+    [data-qa-id="playerControlsContainer"] {
+        padding: 0 5px;
+    }
     div[class*="PlayerControls-hasLandscapePoster-"] div[class*="PlayerControls-buttonGroupCenter-"] {
         margin: 0px 15px;
     }
     div[class*="PlayerControls-buttonGroupCenter-"] {
         flex-grow: 1;
         margin-left: 0;
-        margin-right: 42px;
-        padding: 0px 20px;
-        justify-content: center;
     }
     div[class*="PlayerControls-buttonGroupCenter-"] button[data-qa-id="skipBackButton"] {
         display: none;
@@ -489,18 +489,15 @@ div[class*="NavBar-buttonSeparator-"] {
     div[class*="PlayerControls-hasLandscapePoster-"] div[class*="PlayerControls-buttonGroupRight-"] {
         display: none;
     }
-    div[class*="Player-miniPlayerContainer-"] div[class*="PlayerControls-volumeSlider-"] {
+    div[class*="PlayerControls-volumeSlider-"] {
         display: none;
     }
     div[class*="PlayerControls-buttonGroupRight-"] {
         justify-content: center;
-        padding: 0px 20px;
-        margin-right: 48px;
+        padding: 0;
     }
     div[class*="PlayerControls-buttonGroupRight-"] button[data-qa-id="volumeButton"] {
-        position: absolute;
-        right: 20px;
-        bottom: 28px;
+        display: none;
     }
     div[class*="ControlsContainer-controlsContainer-"] {
         min-width: 0px;
