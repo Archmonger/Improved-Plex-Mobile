@@ -183,9 +183,12 @@ div[class*="NavBar-buttonSeparator-"] {
     [class*="MetadataListPageContent-metadataListScroller"][class*="MetadataListPageContent-hasGutter-"] {
         right: 0;
     }
-    [class*="PageHeader-pageHeader-"] {
+    [class*="PrimaryPageHeader-pageHeader-"] {
+        padding-left: 0px;
+    }
+    [class*="PageHeader-pageHeader-"]:not([class*="PrimaryPageHeader-pageHeader-"]) {
         height: 40px !important;
-        padding-left: 5px;
+        padding-left: 15px;
     }
     [class*="SidebarMenuButton-sidebarMenuPrimaryTitleContainer-"] {
         white-space: nowrap;
@@ -237,9 +240,6 @@ div[class*="NavBar-buttonSeparator-"] {
     [class*="DisclosureArrow-disclosureArrow-"],
     [class*="CollapsibleText-readMoreArrow-"] {
         display: none;
-    }
-    [class*="DisclosureArrowButton-disclosureArrowButton-"][class*="DisclosureArrowButton-medium-"] {
-        padding-right: 0px;
     }
     [class*="PageHeaderBreadcrumbButton-button-"] {
         margin-right: 0px;
@@ -421,8 +421,14 @@ div[class*="NavBar-buttonSeparator-"] {
     span[class*="MetadataPosterTitle-isSplitLine-"] {
         display: none !important;
     }
-    div[class*="PageHeaderLeft-pageHeaderLeft-"] {
+    div[class*="PageHeaderTitle-title-"],
+    div[class*="PageHeaderTitle-detail-"],
+    [class*="PageHeaderBadge-badge-"] {
         display: none !important;
+    }
+    [class*="PrePlayLeftTitle-leftTitle-"],
+    [class*="PrePlayPrimaryTitle-primaryTitle-"] {
+        white-space: normal !important;
     }
     button[class*="MenuItem-menuItem-"] {
         padding: 15px 20px;
@@ -449,7 +455,9 @@ div[class*="NavBar-buttonSeparator-"] {
     .PrePlayDetailsGroup-group-3i0Tj {
         display: none;
     }
-    button[class*="MetadataListStylesMenu-"] {
+    [class*="MetadataListStylesMenu-"],
+    [aria-label="Show Background"],
+    div[class*="PrimaryPageHeaderRight-pageHeaderRight-"] {
         display: none;
     }
     div[class*="PrePlayPageHeader-listStylesArrowsDivider"] {
