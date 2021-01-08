@@ -234,7 +234,8 @@ div[class*="NavBar-buttonSeparator-"] {
     [class*="PageHeader-pageHeader-"] {
         height: 40px;
     }
-    [class*="DisclosureArrow-disclosureArrow-"][class*="DisclosureArrow-medium-20Idw.DisclosureArrow-up-L-"] {
+    [class*="DisclosureArrow-disclosureArrow-"],
+    [class*="CollapsibleText-readMoreArrow-"] {
         display: none;
     }
     [class*="DisclosureArrowButton-disclosureArrowButton-"][class*="DisclosureArrowButton-medium-"] {
