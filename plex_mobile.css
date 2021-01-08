@@ -1,3 +1,22 @@
+@-webkit-keyframes hideThenRecreate {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes hideThenRecreate {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+
 /* Global CSS that hides Plex pass buttons from navbar */
 
 #plex {
@@ -495,6 +514,14 @@ div[class*="NavBar-buttonSeparator-"] {
     }
     div[class*="SeekBar-seekBar-"] div[class*="Slider-thumbTrack-"] {
         z-index: 99;
+    }
+    [role="button"][title="Play"] {
+        -webkit-animation: hideThenRecreate 1s;
+        animation: hideThenRecreate 1s;
+    }
+    [role="button"][title="Pause"] {
+        -webkit-animation: hideThenRecreate 1s;
+        animation: hideThenRecreate 1s;
     }
     /* Remove card overlay btns */
     button[class*="MetadataPosterCardOverlay-button-"] {
