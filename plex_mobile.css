@@ -101,6 +101,10 @@ div[class*="NavBar-buttonSeparator-"] {
         display: none;
     }
     /* Homepage, sidenav, and misc */
+    [class*="Menu-menuPortal-"] {
+        -webkit-animation: hideThenRecreate 1s;
+        animation: hideThenRecreate 1s;
+    }
     div[class*="HomePage-homePageContentScroller-"] {
         zoom: 0.9;
         margin-left: -25px;
