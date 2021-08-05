@@ -29,7 +29,8 @@
     opacity: 0;
 }
 
-button[class*="plexPassButton"] {
+button[class*="plexPassButton"], 
+a[href*="www.plex.tv/plex-pass/"] {
     display: none;
     visibility: hidden;
     opacity: 0;
@@ -168,7 +169,7 @@ div[class*="NavBar-buttonSeparator-"] {
     }
     [class*="SidebarList-sidebarListHeader-"] {
         font-size: 12px;
-        padding-left: 5px;
+        padding-left: 5px !important;
     }
     [class*="SidebarMenuButton-sidebarMenuButton-"] {
         font-size: 10px;
@@ -177,7 +178,7 @@ div[class*="NavBar-buttonSeparator-"] {
         height: 40px;
     }
     [class*="SidebarContainer-sidebarContainer-"] {
-        width: 130px;
+        width: 130px !important;
         flex: 0 130px;
         -webkit-flex: 0 0 130px;
     }
@@ -193,6 +194,7 @@ div[class*="NavBar-buttonSeparator-"] {
     [class*="PageHeader-pageHeader-"]:not([class*="PrimaryPageHeader-pageHeader-"]) {
         height: 40px !important;
         padding-left: 15px;
+        padding-right: 15px;
     }
     [class*="SidebarMenuButton-sidebarMenuPrimaryTitleContainer-"] {
         white-space: nowrap;
@@ -472,6 +474,12 @@ div[class*="NavBar-buttonSeparator-"] {
     }
     div[class*="DiscoverPage-discoverPageList"] {
         padding: 0;
+    }
+    div[class*="DirectoryListToolbar-pageHeader-"] div[class*="PageHeaderRight-pageHeaderRight-"]{
+        display: none;
+    }
+    [class*="VirtualHubScroller-hubActions-"]{
+        display: none;
     }
     /* Video Player */
     [data-qa-id="playerControlsContainer"] {
