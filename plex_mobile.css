@@ -363,9 +363,6 @@ div[class*="NavBar-buttonSeparator-"] {
         padding-top: 20px !important;
         line-height: 1.25 !important;
     }
-    div[class*="PrePlayDetailsContainer-container-"] {
-        flex-direction: column !important;
-    }
     div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="MetadataPosterCard-card-"] {
         margin: auto !important;
     }
@@ -432,8 +429,8 @@ div[class*="NavBar-buttonSeparator-"] {
     [class*="PageHeaderBadge-badge-"] {
         display: none !important;
     }
-    [class*="PrePlayLeftTitle-leftTitle-"],
-    [class*="PrePlayPrimaryTitle-primaryTitle-"] {
+    [class*="PrePlayDetailsContainer-content-"] [class*="PrePlayLeftTitle-leftTitle-"],
+    [class*="PrePlayDetailsContainer-content-"] [class*="PrePlayPrimaryTitle-primaryTitle-"] {
         white-space: normal !important;
     }
     button[class*="MenuItem-menuItem-"] {
@@ -479,6 +476,24 @@ div[class*="NavBar-buttonSeparator-"] {
         display: none;
     }
     [class*="VirtualHubScroller-hubActions-"]{
+        display: none;
+    }
+    [class*="PrePlayDetailsGroupItem-groupItem-"]{
+        flex-direction: column;
+    }
+    [class*="PrePlayDetailsGroupItem-label-"]{
+        flex: 0 0 auto!important;
+        margin-top: 15px;
+    }
+    [class*="PrePlayDescendantList-listContainer-"] [data-qa-id="cellItem"] {
+        display: inline-block !important;
+        position: relative !important;
+        transform: none !important;
+    }
+    [class*="PrePlayDescendantList-listContainer-"] [style="display: contents;"]>div{
+        height: auto !important;
+    }
+    [class*="PrePlayTertiaryTitle-tertiaryTitle-"] .chroma_Badge_module_labelBadge {
         display: none;
     }
     /* Video Player */
