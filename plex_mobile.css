@@ -1,570 +1,614 @@
 @-webkit-keyframes hideThenRecreate {
-    from {
-        visibility: hidden;
-    }
-    to {
-        visibility: visible;
-    }
+	from {
+		visibility: hidden;
+	}
+	to {
+		visibility: visible;
+	}
 }
 
 @keyframes hideThenRecreate {
-    from {
-        visibility: hidden;
-    }
-    to {
-        visibility: visible;
-    }
+	from {
+		visibility: hidden;
+	}
+	to {
+		visibility: visible;
+	}
 }
-
 
 /* Global CSS that hides Plex pass buttons from navbar */
 
 #plex {
-    min-width: 300px;
+	min-width: 300px;
 }
 
-.nav-bar>ul>li>a.plex-pass-btn {
-    display: none !important;
-    visibility: hidden;
-    opacity: 0;
+.nav-bar > ul > li > a.plex-pass-btn {
+	display: none !important;
+	visibility: hidden;
+	opacity: 0;
 }
 
-button[class*="plexPassButton"], 
+button[class*="plexPassButton"],
 a[href*="www.plex.tv/plex-pass/"] {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
+	display: none;
+	visibility: hidden;
+	opacity: 0;
 }
 
 button[class*="NavBarButton-button-"][class*="Link-link-"][class*="Link-default-"] {
-    display: none;
+	display: none;
 }
 
 div[class*="NavBar-buttonSeparator-"] {
-    display: none;
+	display: none;
 }
-
 
 /* Mobile CSS */
 
 @media only screen and (max-width: 768px) {
-    /* Navbar Searchbar */
-    a[class*="NavBar-plexLogo-"] {
-        display: none;
-    }
-    div[class*="QuickSearch-container"] {
-        display: inline-block;
-        width: 100%;
-        margin-left: 0px;
-        height: auto;
-    }
-    i[class*="QuickSearchInput-searchIcon"] {
-        margin-left: 9px;
-        color: hsla(0, 0%, 100%, .7);
-    }
-    div[class*="QuickSearch-container"]:focus-within {
-        display: block;
-        width: calc(100vw - 60px);
-        margin-right: 100vw;
-    }
-    div[class*="QuickSearchInput-container"] {
-        height: 35px;
-        background: rgba(0, 0, 0, 0);
-    }
-    div[class*="QuickSearchInput-container"]:focus-within {
-        background: #FFF;
-    }
-    div[class*="QuickSearchProvider-title"],
-    a[class*="QuickSearchPlaceholderLink-placeholder"] {
-        width: auto;
-    }
-    div[class*="QuickSearch-container"] div[class*="QuickSearchResults-container"] {
-        display: none;
-    }
-    div[class*="QuickSearch-container"]:focus-within div[class*="QuickSearchResults-container"] {
-        display: block;
-    }
-    div[class*="QuickSearch-container"] input[data-qa-id="quickSearchInput"] {
-        display: none;
-    }
-    div[class*="QuickSearch-container"]:focus-within input[data-qa-id="quickSearchInput"],
-    div[class*="QuickSearch-container"]:active input[data-qa-id="quickSearchInput"] {
-        color: #555;
-        display: block;
-    }
-    div[class*="QuickSearch-container"] button {
-        display: none;
-    }
-    div[class*="QuickSearch-container"]:focus-within button {
-        display: block;
-    }
-    button[aria-label="Back"] {
-        display: none;
-    }
-    /* Homepage, sidenav, and misc */
-    [class*="Menu-menuPortal-"] {
-        -webkit-animation: hideThenRecreate 1s;
-        animation: hideThenRecreate 1s;
-    }
-    div[class*="HomePage-homePageContentScroller-"] {
-        zoom: 0.9;
-        margin-left: -25px;
-    }
-    div[class*="ServerTroubleshootingPane-buttonContainer-"] {
-        display: block;
-    }
-    div[class*="ServerTroubleshootingPane-buttonContainer-"] a:first-child {
-        margin-bottom: 10px;
-    }
-    .remote-access-error-container .form-inline .btn {
-        margin-left: 0px;
-    }
-    div[class*="MetadataListStylesMenu-slider-"] {
-        display: none;
-    }
-    button[aria-label="Remove from Home"] {
-        display: none;
-    }
-    button[class*="SourceSidebarItem-overflowButton-"] {
-        opacity: 1;
-    }
-    div[class*="ServerDashboardPageSection-section-"] {
-        padding-left: 0px;
-    }
-    .devices-container .card-poster.device-icon {
-        display: none;
-    }
-    div[class*="SettingsSidebar-"] a[class*="SidebarLink-sidebarLink-"] {
-        padding-left: 0px;
-    }
-    .server-settings-container label {
-        padding-left: 0px;
-        display: block;
-    }
-    .card-sortable {
-        height: auto;
-    }
-    .sessions-list-container {
-        zoom: 0.65;
-    }
-    button[data-qa-id="sidebarLibraryMoreButton"] {
-        display: none;
-    }
-    [class*="NavBarActivityButton-label-"] {
-        top: 20px !important;
-    }
-    .nav-dropdown .dropdown-poster-toggle {
-        height: 40px !important;
-        padding-left: 10px !important;
-    }
-    .nav-bar {
-        background: rgba(0, 0, 0, 0.0);
-    }
-    [class*="NavBar-container-"] {
-        height: 40px !important;
-        max-width: 100vw;
-    }
-    [class*="DashboardPage-dashboardPageContent-"] {
-        padding: 0 20px 20px;
-    }
-    [class*="SidebarList-sidebarListHeader-"] {
-        font-size: 12px;
-        padding-left: 5px !important;
-    }
-    [class*="SidebarMenuButton-sidebarMenuButton-"] {
-        font-size: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        height: 40px;
-    }
-    [class*="SidebarContainer-sidebarContainer-"] {
-        width: 130px !important;
-        flex: 0 130px;
-        -webkit-flex: 0 0 130px;
-    }
-    [class*="LibraryPageJumpBar-jumpBar-"] {
-        display: none;
-    }
-    [class*="MetadataListPageContent-metadataListScroller"][class*="MetadataListPageContent-hasGutter-"] {
-        right: 0;
-    }
-    [class*="PrimaryPageHeader-pageHeader-"] {
-        padding-left: 0px;
-    }
-    [class*="PageHeader-pageHeader-"]:not([class*="PrimaryPageHeader-pageHeader-"]) {
-        height: 40px !important;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    [class*="SidebarMenuButton-sidebarMenuPrimaryTitleContainer-"] {
-        white-space: nowrap;
-    }
-    div[class*="SidebarLink-children"] {
-        display: none;
-    }
-    body {
-        line-height: 1.1;
-        font-size: 12px
-    }
-    [class*="Page-page-"] {
-        font-size: 11px;
-    }
-    .nav-header>li>a {
-        font-size: 13px;
-        line-height: 25px;
-        display: inline;
-    }
-    [class*="SidebarMenuButton-sidebarMenuSecondaryTitle-"] {
-        font-size: 10px;
-    }
-    .nav-bar {
-        font-size: 20px
-    }
-    .dropdown-poster-toggle .media-poster {
-        width: 25px;
-        height: 25px;
-    }
-    [class*="FullPage-container-"] {
-        font-size: 10px;
-    }
-    [class*="ServerSidebar-sidebarContent-"] {
-        padding-top: 0px;
-        padding-left: 5px;
-    }
-    [class*="PageContent-innerPageContent-"] {
-        padding: 20px;
-    }
-    [class*="MetadataPosterCell-continueWatchingTitleContainer-"] {
-        font-size: 10px;
-    }
-    .nav-bar-nav>li>a {
-        line-height: 40px;
-    }
-    [class*="PageHeader-pageHeader-"] {
-        height: 40px;
-    }
-    [class*="DisclosureArrow-disclosureArrow-"],
-    [class*="CollapsibleText-readMoreArrow-"] {
-        display: none;
-    }
-    [class*="PageHeaderBreadcrumbButton-button-"] {
-        margin-right: 0px;
-    }
-    [class*="MetadataPosterTitle-singleLineTitle-"] {
-        height: 18px;
-        font-size: 11px;
-        max-width: 100%;
-    }
-    [class*="HubCellHeader-hubCellHeader-"] {
-        padding: 0px 0 0px 5px;
-    }
-    [class*="PrePlayMetadataContent-content-"] {
-        padding-left: 0px;
-    }
-    [class*="SidebarServerLibraries-librariesTitle-"] {
-        overflow: visible !important;
-    }
-    div[class*="SidebarLibrariesActions-actions-"] {
-        display: none;
-    }
-    div[class*="ManageLibrarySummary-iconContainer"] {
-        display: none;
-    }
-    div[class*="ManageLibrariesPane-header"] {
-        text-align: center;
-        display: block;
-    }
-    div[class*="ManageLibrariesPane-headerTitle"] {
-        padding-bottom: 15px;
-        padding-bottom: 10px;
-    }
-    button[class*="ManageLibrariesPane-button-"] {
-        margin-bottom: 15px;
-    }
-    .remote-access-status-icon.glyphicon.globe {
-        display: none;
-    }
-    .remote-access-status-message {
-        padding-left: 0px;
-    }
-    .plex-image.server.server-xs.server-logo {
-        display: none;
-    }
-    .remote-access-error-container {
-        margin-left: 0px;
-    }
-    .server-settings-container select,
-    .web-settings-container select {
-        margin: 0px;
-        font-size: 13px;
-        max-width: 100%;
-    }
-    .remote-access-mapping-container .remote-access-mapping .mapping-label {
-        display: block;
-        margin-top: 15px;
-    }
-    div[class*="ServerAvatar-avatar"] {
-        display: none;
-    }
-    .alerts-container .page-count {
-        display: none;
-    }
-    div[class*="ClaimedServer-message"] {
-        position: relative;
-        margin-bottom: 12px;
-    }
-    button[class*="ClaimedServer-button"] {
-        margin-top: 50px;
-        position: absolute;
-    }
-    div[class*="HubCell-hubCell-"] {
-        margin-bottom: 20px;
-    }
-    div[class*="HubCell-hubCell-"]:first-of-type {
-        margin-top: 0px;
-    }
-    div[class*="UsersSettingsRowFriend-actions-"] {
-        opacity: 1;
-        flex: 0 1 50px;
-    }
-    div[class*="UsersSettingsRowAvatar-container-"] {
-        display: none;
-    }
-    div[class*="UsersSettingsRow-row-3"] {
-        padding: 10px;
-    }
-    div[class*="UsersSettingsRowHomeUser-row-"] div[class*="UsersSettingsRowShares-container-"] {
-        display: none;
-    }
-    div[class*="UsersSettingsRowHomeUser-row-"] div[class*="UsersSettingsRowHome-container-"] {
-        flex: 0 1 20px;
-    }
-    div[class*="SettingsPage-content-"] {
-        padding: 0 10px;
-    }
-    .agent-types-nav>li {
-        width: 100%;
-    }
-    /* Individual Media Items  */
-    div[class*="DisclosureArrowButton-disclosureArrow-"] {
-        position: relative;
-    }
-    div[class*="Menu-menuScroller"] {
-        max-height: 350px !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PageContent-innerPageContent-"]>div>div:not([class*="PrePlay"]) {
-        position: relative !important;
-        top: 0px !important;
-        padding-top: 10px;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayMetadataContent-content-"] {
-        padding-left: 0px !important;
-        margin-left: 0px !important;
-        padding-top: 20px !important;
-        line-height: 1.25 !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="MetadataPosterCard-card-"] {
-        margin: auto !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayMetadataInnerContent-innerContent-"] {
-        padding: 0 !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlaySecondaryTitle-secondaryTitle-"] {
-        display: inline !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRatingRightTitle-ratingRightTitle-"] {
-        display: inline-block !important;
-        margin-left: 0px !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="MetadataPosterCardOverlay-background-"] {
-        display: none !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="MetadataPosterCardOverlay-unplayedBadge-"] {
-        text-align: right !important;
-        min-width: 0% !important;
-        float: right !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayDetailsGroupItem-label-"] {
-        flex: 0 0 58px !important;
-        -webkit-flex: 0 0 58px !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayDetailsGroupItem-content-"] {
-        font-size: 12px !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayTertiaryTitle-tertiaryTitle-"] {
-        font-size: 12px !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] span[class*="PrePlayRatingRightTitle-starRating-"] {
-        display: none !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayRatingRightTitle-criticRating-"] {
-        margin-left: 0px !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayLeftTitle-leftTitle-"] {
-        white-space: normal !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayTertiaryTitle-tertiaryTitle-"] div[class*="PrePlayRightTitle-rightTitle-"] {
-        display: none;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] a[class*="PrePlayStatusButton-statusButton-"] {
-        display: none;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlaySummary-summary-"] {
-        font-size: 12px !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlaySecondaryTitle-secondaryTitle-"] {
-        font-size: 12px !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlayTertiaryTitle-tertiaryTitle-"] {
-        margin-top: -25px !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] span[class*="PrePlayRatingRightTitle-criticRating-"] {
-        display: none !important;
-    }
-    span[class*="MetadataPosterTitle-isSplitLine-"] {
-        display: none !important;
-    }
-    div[class*="PageHeaderTitle-title-"],
-    div[class*="PageHeaderTitle-detail-"],
-    [class*="PageHeaderBadge-badge-"] {
-        display: none !important;
-    }
-    [class*="PrePlayDetailsContainer-content-"] [class*="PrePlayLeftTitle-leftTitle-"],
-    [class*="PrePlayDetailsContainer-content-"] [class*="PrePlayPrimaryTitle-primaryTitle-"] {
-        white-space: normal !important;
-    }
-    button[class*="MenuItem-menuItem-"] {
-        padding: 15px 20px;
-    }
-    div[class*="HubCellTitle-hubCellTitle-"],
-    div[class*="HubCellTitle-hubCellTitle-"] a {
-        font-size: 12px !important;
-    }
-    div[class*="HubCell-hubActions-"] {
-        display: none !important;
-    }
-    button[data-qa-id="toolbarToggleArtwork"] {
-        display: none !important;
-    }
-    div[class*="PrePlayArtwork-imageContainer-"] {
-        display: none !important;
-    }
-    div[class*="PageHeaderRight-pageHeaderRight-"] div[class*="PrePlayPageHeader-divider-"] {
-        display: none !important;
-    }
-    div[class*="PrePlayPageContent-prePlayPageContent-"] div[class*="PrePlaySecondaryTitle-secondaryTitle-"] div[class*="PrePlayLeftTitle-leftTitle-"] {
-        color: hsla(0, 0%, 100%, .45);
-    }
-    .PrePlayDetailsGroup-group-3i0Tj {
-        display: none;
-    }
-    [class*="MetadataListStylesMenu-"],
-    [aria-label="Show Background"],
-    div[class*="PrimaryPageHeaderRight-pageHeaderRight-"] {
-        display: none;
-    }
-    div[class*="PrePlayPageHeader-listStylesArrowsDivider"] {
-        display: none;
-    }
-    div[class*="PageHeaderDivider-pageHeaderDivider"] {
-        display: none;
-    }
-    div[class*="DiscoverPage-discoverPageList"] {
-        padding: 0;
-    }
-    div[class*="DirectoryListToolbar-pageHeader-"] div[class*="PageHeaderRight-pageHeaderRight-"]{
-        display: none;
-    }
-    [class*="VirtualHubScroller-hubActions-"]{
-        display: none;
-    }
-    [class*="PrePlayDetailsGroupItem-groupItem-"]{
-        flex-direction: column;
-    }
-    [class*="PrePlayDetailsGroupItem-label-"]{
-        flex: 0 0 auto!important;
-        margin-top: 15px;
-    }
-    [class*="PrePlayDescendantList-listContainer-"] [data-qa-id="cellItem"] {
-        display: inline-block !important;
-        position: relative !important;
-        transform: none !important;
-    }
-    [class*="PrePlayDescendantList-listContainer-"] [style="display: contents;"]>div{
-        height: auto !important;
-    }
-    [class*="PrePlayTertiaryTitle-tertiaryTitle-"] .chroma_Badge_module_labelBadge {
-        display: none;
-    }
-    /* Video Player */
-    [data-qa-id="playerControlsContainer"] {
-        padding: 0 5px;
-    }
-    div[class*="PlayerControls-hasLandscapePoster-"] div[class*="PlayerControls-buttonGroupCenter-"] {
-        margin: 0px 15px;
-    }
-    div[class*="PlayerControls-buttonGroupCenter-"] {
-        flex-grow: 1;
-        margin-left: 0;
-    }
-    div[class*="PlayerControls-buttonGroupCenter-"] button[data-qa-id="skipBackButton"] {
-        display: none;
-    }
-    div[class*="PlayerControls-buttonGroupCenter-"] button[data-qa-id="skipForwardButton"] {
-        display: none;
-    }
-    div[class*="PlayerControls-hasLandscapePoster-"] div[class*="PlayerControls-buttonGroupRight-"] {
-        display: none;
-    }
-    div[class*="PlayerControls-volumeSlider-"] {
-        display: none;
-    }
-    div[class*="PlayerControls-buttonGroupRight-"] {
-        justify-content: center;
-        padding: 0;
-    }
-    div[class*="PlayerControls-buttonGroupRight-"] button[data-qa-id="volumeButton"] {
-        display: none;
-    }
-    div[class*="ControlsContainer-controlsContainer-"] {
-        min-width: 0px;
-    }
-    div[class*="SeekBar-seekBar-"] {
-        height: 28px;
-    }
-    div[class*="SeekBar-seekBar-"] div[class*="SeekBar-seekBarTrack-"] {
-        height: 8px;
-    }
-    div[class*="SeekBar-seekBar-"] div[class*="SeekBar-seekBarTrack-"] div[class*="SeekBar-seekBarBuffer-"] {
-        height: 8px;
-    }
-    div[class*="SeekBar-seekBar-"] div[class*="SeekBar-seekBarTrack-"] div[class*="SeekBar-seekBarFill-"] {
-        height: 8px;
-    }
-    div[class*="SeekBar-seekBar-"] button[class*="Slider-thumb-"] {
-        height: 18px;
-        width: 18px;
-    }
-    div[class*="SeekBar-seekBar-"] div[class*="Slider-thumbTrack-"] {
-        z-index: 99;
-    }
-    [role="button"][title="Play"] {
-        -webkit-animation: hideThenRecreate 1s;
-        animation: hideThenRecreate 1s;
-    }
-    [role="button"][title="Pause"] {
-        -webkit-animation: hideThenRecreate 1s;
-        animation: hideThenRecreate 1s;
-    }
-    /* Remove card overlay btns */
-    button[class*="MetadataPosterCardOverlay-button-"] {
-        display: none;
-    }
+	/* Navbar Searchbar */
+	a[class*="NavBar-plexLogo-"] {
+		display: none;
+	}
+	div[class*="QuickSearch-container"] {
+		display: inline-block;
+		width: 100%;
+		margin-left: 0px;
+		height: auto;
+	}
+	i[class*="QuickSearchInput-searchIcon"] {
+		margin-left: 9px;
+		color: hsla(0, 0%, 100%, 0.7);
+	}
+	div[class*="QuickSearch-container"]:focus-within {
+		display: block;
+		width: calc(100vw - 60px);
+		margin-right: 100vw;
+	}
+	div[class*="QuickSearchInput-container"] {
+		height: 35px;
+		background: rgba(0, 0, 0, 0);
+	}
+	div[class*="QuickSearchInput-container"]:focus-within {
+		background: #fff;
+	}
+	div[class*="QuickSearchProvider-title"],
+	a[class*="QuickSearchPlaceholderLink-placeholder"] {
+		width: auto;
+	}
+	div[class*="QuickSearch-container"]
+		div[class*="QuickSearchResults-container"] {
+		display: none;
+	}
+	div[class*="QuickSearch-container"]:focus-within
+		div[class*="QuickSearchResults-container"] {
+		display: block;
+	}
+	div[class*="QuickSearch-container"] input[data-qa-id="quickSearchInput"] {
+		display: none;
+	}
+	div[class*="QuickSearch-container"]:focus-within
+		input[data-qa-id="quickSearchInput"],
+	div[class*="QuickSearch-container"]:active
+		input[data-qa-id="quickSearchInput"] {
+		color: #555;
+		display: block;
+	}
+	div[class*="QuickSearch-container"] button {
+		display: none;
+	}
+	div[class*="QuickSearch-container"]:focus-within button {
+		display: block;
+	}
+	button[aria-label="Back"] {
+		display: none;
+	}
+	/* Homepage, sidenav, and misc */
+	[class*="Menu-menuPortal-"] {
+		-webkit-animation: hideThenRecreate 1s;
+		animation: hideThenRecreate 1s;
+	}
+	div[class*="HomePage-homePageContentScroller-"] {
+		zoom: 0.9;
+		margin-left: -25px;
+	}
+	div[class*="ServerTroubleshootingPane-buttonContainer-"] {
+		display: block;
+	}
+	div[class*="ServerTroubleshootingPane-buttonContainer-"] a:first-child {
+		margin-bottom: 10px;
+	}
+	.remote-access-error-container .form-inline .btn {
+		margin-left: 0px;
+	}
+	div[class*="MetadataListStylesMenu-slider-"] {
+		display: none;
+	}
+	button[aria-label="Remove from Home"] {
+		display: none;
+	}
+	button[class*="SourceSidebarItem-overflowButton-"] {
+		opacity: 1;
+	}
+	div[class*="ServerDashboardPageSection-section-"] {
+		padding-left: 0px;
+	}
+	.devices-container .card-poster.device-icon {
+		display: none;
+	}
+	div[class*="SettingsSidebar-"] a[class*="SidebarLink-sidebarLink-"] {
+		padding-left: 0px;
+	}
+	.server-settings-container label {
+		padding-left: 0px;
+		display: block;
+	}
+	.card-sortable {
+		height: auto;
+	}
+	.sessions-list-container {
+		zoom: 0.65;
+	}
+	button[data-qa-id="sidebarLibraryMoreButton"] {
+		display: none;
+	}
+	[class*="NavBarActivityButton-label-"] {
+		top: 20px !important;
+	}
+	.nav-dropdown .dropdown-poster-toggle {
+		height: 40px !important;
+		padding-left: 10px !important;
+	}
+	.nav-bar {
+		background: rgba(0, 0, 0, 0);
+	}
+	[class*="NavBar-container-"] {
+		height: 40px !important;
+		max-width: 100vw;
+	}
+	[class*="DashboardPage-dashboardPageContent-"] {
+		padding: 0 20px 20px;
+	}
+	[class*="SidebarList-sidebarListHeader-"] {
+		font-size: 12px;
+		padding-left: 5px !important;
+	}
+	[class*="SidebarMenuButton-sidebarMenuButton-"] {
+		font-size: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		height: 40px;
+	}
+	[class*="SidebarContainer-sidebarContainer-"] {
+		width: 130px !important;
+		flex: 0 130px;
+		-webkit-flex: 0 0 130px;
+	}
+	[class*="LibraryPageJumpBar-jumpBar-"] {
+		display: none;
+	}
+	[class*="MetadataListPageContent-metadataListScroller"][class*="MetadataListPageContent-hasGutter-"] {
+		right: 0;
+	}
+	[class*="PrimaryPageHeader-pageHeader-"] {
+		padding-left: 0px;
+	}
+	[class*="PageHeader-pageHeader-"]:not([class*="PrimaryPageHeader-pageHeader-"]) {
+		height: 40px !important;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	[class*="SidebarMenuButton-sidebarMenuPrimaryTitleContainer-"] {
+		white-space: nowrap;
+	}
+	div[class*="SidebarLink-children"] {
+		display: none;
+	}
+	body {
+		line-height: 1.1;
+		font-size: 12px;
+	}
+	[class*="Page-page-"] {
+		font-size: 11px;
+	}
+	.nav-header > li > a {
+		font-size: 13px;
+		line-height: 25px;
+		display: inline;
+	}
+	[class*="SidebarMenuButton-sidebarMenuSecondaryTitle-"] {
+		font-size: 10px;
+	}
+	.nav-bar {
+		font-size: 20px;
+	}
+	.dropdown-poster-toggle .media-poster {
+		width: 25px;
+		height: 25px;
+	}
+	[class*="FullPage-container-"] {
+		font-size: 10px;
+	}
+	[class*="ServerSidebar-sidebarContent-"] {
+		padding-top: 0px;
+		padding-left: 5px;
+	}
+	[class*="PageContent-innerPageContent-"] {
+		padding: 20px;
+	}
+	[class*="MetadataPosterCell-continueWatchingTitleContainer-"] {
+		font-size: 10px;
+	}
+	.nav-bar-nav > li > a {
+		line-height: 40px;
+	}
+	[class*="PageHeader-pageHeader-"] {
+		height: 40px;
+	}
+	[class*="DisclosureArrow-disclosureArrow-"],
+	[class*="CollapsibleText-readMoreArrow-"] {
+		display: none;
+	}
+	[class*="PageHeaderBreadcrumbButton-button-"] {
+		margin-right: 0px;
+	}
+	[class*="MetadataPosterTitle-singleLineTitle-"] {
+		height: 18px;
+		font-size: 11px;
+		max-width: 100%;
+	}
+	[class*="HubCellHeader-hubCellHeader-"] {
+		padding: 0px 0 0px 5px;
+	}
+	[class*="PrePlayMetadataContent-content-"] {
+		padding-left: 0px;
+	}
+	[class*="SidebarServerLibraries-librariesTitle-"] {
+		overflow: visible !important;
+	}
+	div[class*="SidebarLibrariesActions-actions-"] {
+		display: none;
+	}
+	div[class*="ManageLibrarySummary-iconContainer"] {
+		display: none;
+	}
+	div[class*="ManageLibrariesPane-header"] {
+		text-align: center;
+		display: block;
+	}
+	div[class*="ManageLibrariesPane-headerTitle"] {
+		padding-bottom: 15px;
+		padding-bottom: 10px;
+	}
+	button[class*="ManageLibrariesPane-button-"] {
+		margin-bottom: 15px;
+	}
+	.remote-access-status-icon.glyphicon.globe {
+		display: none;
+	}
+	.remote-access-status-message {
+		padding-left: 0px;
+	}
+	.plex-image.server.server-xs.server-logo {
+		display: none;
+	}
+	.remote-access-error-container {
+		margin-left: 0px;
+	}
+	.server-settings-container select,
+	.web-settings-container select {
+		margin: 0px;
+		font-size: 13px;
+		max-width: 100%;
+	}
+	.remote-access-mapping-container .remote-access-mapping .mapping-label {
+		display: block;
+		margin-top: 15px;
+	}
+	div[class*="ServerAvatar-avatar"] {
+		display: none;
+	}
+	.alerts-container .page-count {
+		display: none;
+	}
+	div[class*="ClaimedServer-message"] {
+		position: relative;
+		margin-bottom: 12px;
+	}
+	button[class*="ClaimedServer-button"] {
+		margin-top: 50px;
+		position: absolute;
+	}
+	div[class*="HubCell-hubCell-"] {
+		margin-bottom: 20px;
+	}
+	div[class*="HubCell-hubCell-"]:first-of-type {
+		margin-top: 0px;
+	}
+	div[class*="UsersSettingsRowFriend-actions-"] {
+		opacity: 1;
+		flex: 0 1 50px;
+	}
+	div[class*="UsersSettingsRowAvatar-container-"] {
+		display: none;
+	}
+	div[class*="UsersSettingsRow-row-3"] {
+		padding: 10px;
+	}
+	div[class*="UsersSettingsRowHomeUser-row-"]
+		div[class*="UsersSettingsRowShares-container-"] {
+		display: none;
+	}
+	div[class*="UsersSettingsRowHomeUser-row-"]
+		div[class*="UsersSettingsRowHome-container-"] {
+		flex: 0 1 20px;
+	}
+	div[class*="SettingsPage-content-"] {
+		padding: 0 10px;
+	}
+	.agent-types-nav > li {
+		width: 100%;
+	}
+	/* Individual Media Items  */
+	div[class*="DisclosureArrowButton-disclosureArrow-"] {
+		position: relative;
+	}
+	div[class*="Menu-menuScroller"] {
+		max-height: 350px !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PageContent-innerPageContent-"]
+		> div
+		> div:not([class*="PrePlay"]) {
+		position: relative !important;
+		top: 0px !important;
+		padding-top: 10px;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlayMetadataContent-content-"] {
+		padding-left: 0px !important;
+		margin-left: 0px !important;
+		padding-top: 20px !important;
+		line-height: 1.25 !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="MetadataPosterCard-card-"] {
+		margin: auto !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlayMetadataInnerContent-innerContent-"] {
+		padding: 0 !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlaySecondaryTitle-secondaryTitle-"] {
+		display: inline !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlayRatingRightTitle-ratingRightTitle-"] {
+		display: inline-block !important;
+		margin-left: 0px !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="MetadataPosterCardOverlay-background-"] {
+		display: none !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="MetadataPosterCardOverlay-unplayedBadge-"] {
+		text-align: right !important;
+		min-width: 0% !important;
+		float: right !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlayDetailsGroupItem-label-"] {
+		flex: 0 0 58px !important;
+		-webkit-flex: 0 0 58px !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlayDetailsGroupItem-content-"] {
+		font-size: 12px !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlayTertiaryTitle-tertiaryTitle-"] {
+		font-size: 12px !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		span[class*="PrePlayRatingRightTitle-starRating-"] {
+		display: none !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlayRatingRightTitle-criticRating-"] {
+		margin-left: 0px !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlayLeftTitle-leftTitle-"] {
+		white-space: normal !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlayTertiaryTitle-tertiaryTitle-"]
+		div[class*="PrePlayRightTitle-rightTitle-"] {
+		display: none;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		a[class*="PrePlayStatusButton-statusButton-"] {
+		display: none;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlaySummary-summary-"] {
+		font-size: 12px !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlaySecondaryTitle-secondaryTitle-"] {
+		font-size: 12px !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlayTertiaryTitle-tertiaryTitle-"] {
+		margin-top: -25px !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		span[class*="PrePlayRatingRightTitle-criticRating-"] {
+		display: none !important;
+	}
+	span[class*="MetadataPosterTitle-isSplitLine-"] {
+		display: none !important;
+	}
+	div[class*="PageHeaderTitle-title-"],
+	div[class*="PageHeaderTitle-detail-"],
+	[class*="PageHeaderBadge-badge-"] {
+		display: none !important;
+	}
+	[class*="PrePlayDetailsContainer-content-"]
+		[class*="PrePlayLeftTitle-leftTitle-"],
+	[class*="PrePlayDetailsContainer-content-"]
+		[class*="PrePlayPrimaryTitle-primaryTitle-"] {
+		white-space: normal !important;
+	}
+	button[class*="MenuItem-menuItem-"] {
+		padding: 15px 20px;
+	}
+	div[class*="HubCellTitle-hubCellTitle-"],
+	div[class*="HubCellTitle-hubCellTitle-"] a {
+		font-size: 12px !important;
+	}
+	div[class*="HubCell-hubActions-"] {
+		display: none !important;
+	}
+	button[data-qa-id="toolbarToggleArtwork"] {
+		display: none !important;
+	}
+	div[class*="PrePlayArtwork-imageContainer-"] {
+		display: none !important;
+	}
+	div[class*="PageHeaderRight-pageHeaderRight-"]
+		div[class*="PrePlayPageHeader-divider-"] {
+		display: none !important;
+	}
+	div[class*="PrePlayPageContent-prePlayPageContent-"]
+		div[class*="PrePlaySecondaryTitle-secondaryTitle-"]
+		div[class*="PrePlayLeftTitle-leftTitle-"] {
+		color: hsla(0, 0%, 100%, 0.45);
+	}
+	.PrePlayDetailsGroup-group-3i0Tj {
+		display: none;
+	}
+	[class*="MetadataListStylesMenu-"],
+	[aria-label="Show Background"],
+	div[class*="PrimaryPageHeaderRight-pageHeaderRight-"] {
+		display: none;
+	}
+	div[class*="PrePlayPageHeader-listStylesArrowsDivider"] {
+		display: none;
+	}
+	div[class*="PageHeaderDivider-pageHeaderDivider"] {
+		display: none;
+	}
+	div[class*="DiscoverPage-discoverPageList"] {
+		padding: 0;
+	}
+	div[class*="DirectoryListToolbar-pageHeader-"]
+		div[class*="PageHeaderRight-pageHeaderRight-"] {
+		display: none;
+	}
+	[class*="VirtualHubScroller-hubActions-"] {
+		display: none;
+	}
+	[class*="PrePlayDetailsGroupItem-groupItem-"] {
+		flex-direction: column;
+	}
+	[class*="PrePlayDetailsGroupItem-label-"] {
+		flex: 0 0 auto !important;
+		margin-top: 15px;
+	}
+	[class*="PrePlayDescendantList-listContainer-"] [data-qa-id="cellItem"] {
+		display: inline-block !important;
+		position: relative !important;
+		transform: none !important;
+	}
+	[class*="PrePlayDescendantList-listContainer-"]
+		[style="display: contents;"]
+		> div {
+		height: auto !important;
+	}
+	[class*="PrePlayTertiaryTitle-tertiaryTitle-"]
+		.chroma_Badge_module_labelBadge {
+		display: none;
+	}
+	/* Video Player */
+	[data-qa-id="playerControlsContainer"] {
+		padding: 0 5px;
+	}
+	div[class*="PlayerControls-hasLandscapePoster-"]
+		div[class*="PlayerControls-buttonGroupCenter-"] {
+		margin: 0px 15px;
+	}
+	div[class*="PlayerControls-buttonGroupCenter-"] {
+		flex-grow: 1;
+		margin-left: 0;
+	}
+	div[class*="PlayerControls-buttonGroupCenter-"]
+		button[data-qa-id="skipBackButton"] {
+		display: none;
+	}
+	div[class*="PlayerControls-buttonGroupCenter-"]
+		button[data-qa-id="skipForwardButton"] {
+		display: none;
+	}
+	div[class*="PlayerControls-hasLandscapePoster-"]
+		div[class*="PlayerControls-buttonGroupRight-"] {
+		display: none;
+	}
+	div[class*="PlayerControls-volumeSlider-"] {
+		display: none;
+	}
+	div[class*="PlayerControls-buttonGroupRight-"] {
+		justify-content: center;
+		padding: 0;
+	}
+	div[class*="PlayerControls-buttonGroupRight-"]
+		button[data-qa-id="volumeButton"] {
+		display: none;
+	}
+	div[class*="ControlsContainer-controlsContainer-"] {
+		min-width: 0px;
+	}
+	div[class*="SeekBar-seekBar-"] {
+		height: 28px;
+	}
+	div[class*="SeekBar-seekBar-"] div[class*="SeekBar-seekBarTrack-"] {
+		height: 8px;
+	}
+	div[class*="SeekBar-seekBar-"]
+		div[class*="SeekBar-seekBarTrack-"]
+		div[class*="SeekBar-seekBarBuffer-"] {
+		height: 8px;
+	}
+	div[class*="SeekBar-seekBar-"]
+		div[class*="SeekBar-seekBarTrack-"]
+		div[class*="SeekBar-seekBarFill-"] {
+		height: 8px;
+	}
+	div[class*="SeekBar-seekBar-"] button[class*="Slider-thumb-"] {
+		height: 18px;
+		width: 18px;
+	}
+	div[class*="SeekBar-seekBar-"] div[class*="Slider-thumbTrack-"] {
+		z-index: 99;
+	}
+	[role="button"][title="Play"] {
+		-webkit-animation: hideThenRecreate 1s;
+		animation: hideThenRecreate 1s;
+	}
+	[role="button"][title="Pause"] {
+		-webkit-animation: hideThenRecreate 1s;
+		animation: hideThenRecreate 1s;
+	}
+	/* Remove card overlay btns */
+	button[class*="MetadataPosterCardOverlay-button-"] {
+		display: none;
+	}
 }
-
 
 /* Bugfix: File path too long */
 
-.media-info-file-list>li {
-    word-break: break-all;
+.media-info-file-list > li {
+	word-break: break-all;
 }
