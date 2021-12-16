@@ -164,8 +164,12 @@ div[class*="NavBar-buttonSeparator-"] {
 	}
 	[class*="NavBar-container-"] {
 		height: 40px !important;
+		overflow: hidden;
 		max-width: 100vw;
 	}
+	[class*="NavBar-container-"] .chroma_Flex_module_flex {
+		justify-content: start !important;
+	}	
 	[class*="DashboardPage-dashboardPageContent-"] {
 		padding: 0 20px 20px;
 	}
