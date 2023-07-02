@@ -43,62 +43,41 @@ div[class*="NavBar-buttonSeparator-"] {
 	display: none;
 }
 
-/* Mobile CSS */
+div[class*="NavBar-container-"] [role="separator"]{
+    display: none;
+}
 
+/* Mobile CSS */
 @media only screen and (max-width: 768px) {
-	/* Navbar Searchbar */
+	/* Navbar and Search */
 	a[class*="NavBar-plexLogo-"] {
 		display: none;
 	}
-	div[class*="QuickSearch-container"] {
-		display: inline-block;
-		width: 100%;
-		margin-left: 0px;
-		height: auto;
+	div[class*="UniversalSearch-searchInputContainer-"]{
+		margin: 0;
 	}
-	i[class*="QuickSearchInput-searchIcon"] {
-		margin-left: 9px;
-		color: hsla(0, 0%, 100%, 0.7);
-	}
-	div[class*="QuickSearch-container"]:focus-within {
-		display: block;
-		width: calc(100vw - 60px);
-		margin-right: 100vw;
-	}
-	div[class*="QuickSearchInput-container"] {
-		height: 35px;
-		background: rgba(0, 0, 0, 0);
-	}
-	div[class*="QuickSearchInput-container"]:focus-within {
-		background: #fff;
-	}
-	div[class*="QuickSearchProvider-title"],
-	a[class*="QuickSearchPlaceholderLink-placeholder"] {
-		width: auto;
-	}
-	div[class*="QuickSearch-container"]
-		div[class*="QuickSearchResults-container"] {
+	div[class*="NavBar-logoContainer-"] {
 		display: none;
 	}
-	div[class*="QuickSearch-container"]:focus-within
-		div[class*="QuickSearchResults-container"] {
-		display: block;
+	div[class*="NavBar-container-"] ._1duebfh9y, div[class*="NavBar-container-"] ._1duebfh8u {
+		padding: 1px;
 	}
-	div[class*="QuickSearch-container"] input[data-qa-id="quickSearchInput"] {
+	div[class*="NavBar-container-"]{
+		--size-m: 4px;
+	}
+	div[class*="NavBarActivityButton-container-"] div[class*="NavBarActivityButton-labelContainer-"]{
 		display: none;
 	}
-	div[class*="QuickSearch-container"]:focus-within
-		input[data-qa-id="quickSearchInput"],
-	div[class*="QuickSearch-container"]:active
-		input[data-qa-id="quickSearchInput"] {
-		color: #555;
-		display: block;
+	div[class*="NavBarAccountMenu-disclosure-"]{
+		margin-left: 5px;
+		margin-right: 10px;
 	}
-	div[class*="QuickSearch-container"] button {
+	div[class*="NavBar-container-"] .un124a2, div[class*="NavBar-container-"] .un124a1{
 		display: none;
-	}
-	div[class*="QuickSearch-container"]:focus-within button {
-		display: block;
+	}	
+	div[class*="RecentSearchResultItem-container-"]{
+		padding-left: 10px;
+		padding-right: 0;
 	}
 	button[aria-label="Back"] {
 		display: none;
