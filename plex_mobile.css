@@ -53,11 +53,11 @@ div[class*="NavBar-container-"] [role="separator"]{
 	a[class*="NavBar-plexLogo-"] {
 		display: none;
 	}
-	div[class*="UniversalSearch-searchInputContainer-"]{
-		margin: 0;
-	}
 	div[class*="NavBar-logoContainer-"] {
 		display: none;
+	}
+	div[class*="UniversalSearch-searchInputContainer-"]{
+		margin: 0;
 	}
 	div[class*="NavBar-container-"] ._1duebfh9y, div[class*="NavBar-container-"] ._1duebfh8u {
 		padding: 1px;
