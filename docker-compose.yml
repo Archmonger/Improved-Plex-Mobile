@@ -1,0 +1,7 @@
+nginx:
+  image: nginx:alpine
+  ports:
+    - 32410:80
+  volumes:
+    - ./proxy.conf:/etc/nginx/conf.d/01-proxy.conf
+  restart: always
