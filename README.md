@@ -22,6 +22,14 @@ If you need installation help, join our Discord!
 - Web Domain _(free or paid)_
 
 
+**Docker**<br/>
+Run nginx reverse proxy in docker container
+
+```
+$ sudo docker-compose up -d
+Starting improvedplexmobile_nginx_1
+```
+
 ## Screenshots
 | Classic | Improved Plex Mobile |
 |:---:|:---:|
