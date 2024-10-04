@@ -22,6 +22,7 @@
 	min-width: 300px;
 }
 
+button._1v4h9jl0._76v8d62._76v8d61._76v8d68.tvbry60._76v8d6g._76v8d63._1v25wbq1g._1v25wbq1c,
 .nav-bar > ul > li > a.plex-pass-btn {
 	display: none !important;
 	visibility: hidden;
@@ -43,8 +44,8 @@ div[class*="NavBar-buttonSeparator-"] {
 	display: none;
 }
 
-div[class*="NavBar-container-"] [role="separator"]{
-    display: none;
+div[class*="NavBar-container-"] [role="separator"] {
+	display: none;
 }
 
 /* Mobile CSS */
@@ -56,26 +57,29 @@ div[class*="NavBar-container-"] [role="separator"]{
 	div[class*="NavBar-logoContainer-"] {
 		display: none;
 	}
-	div[class*="UniversalSearch-searchInputContainer-"]{
+	div[class*="UniversalSearch-searchInputContainer-"] {
 		margin: 0;
 	}
-	div[class*="NavBar-container-"] ._1duebfh9y, div[class*="NavBar-container-"] ._1duebfh8u {
+	div[class*="NavBar-container-"] ._1duebfh9y,
+	div[class*="NavBar-container-"] ._1duebfh8u {
 		padding: 1px;
 	}
-	div[class*="NavBar-container-"]{
+	div[class*="NavBar-container-"] {
 		--size-m: 4px;
 	}
-	div[class*="NavBarActivityButton-container-"] div[class*="NavBarActivityButton-labelContainer-"]{
+	div[class*="NavBarActivityButton-container-"]
+		div[class*="NavBarActivityButton-labelContainer-"] {
 		display: none;
 	}
-	div[class*="NavBarAccountMenu-disclosure-"]{
+	div[class*="NavBarAccountMenu-disclosure-"] {
 		margin-left: 5px;
 		margin-right: 10px;
 	}
-	div[class*="NavBar-container-"] .un124a2, div[class*="NavBar-container-"] .un124a1{
+	div[class*="NavBar-container-"] .un124a2,
+	div[class*="NavBar-container-"] .un124a1 {
 		display: none;
-	}	
-	div[class*="RecentSearchResultItem-container-"]{
+	}
+	div[class*="RecentSearchResultItem-container-"] {
 		padding-left: 10px;
 		padding-right: 0;
 	}
@@ -148,7 +152,7 @@ div[class*="NavBar-container-"] [role="separator"]{
 	}
 	[class*="NavBar-container-"] .chroma_Flex_module_flex {
 		justify-content: start !important;
-	}	
+	}
 	[class*="DashboardPage-dashboardPageContent-"] {
 		padding: 0 20px 20px;
 	}
@@ -176,7 +180,9 @@ div[class*="NavBar-container-"] [role="separator"]{
 	[class*="PrimaryPageHeader-pageHeader-"] {
 		padding-left: 0px;
 	}
-	[class*="PageHeader-pageHeader-"]:not([class*="PrimaryPageHeader-pageHeader-"]) {
+	[class*="PageHeader-pageHeader-"]:not(
+			[class*="PrimaryPageHeader-pageHeader-"]
+		) {
 		height: 40px !important;
 		padding-left: 15px;
 		padding-right: 15px;
